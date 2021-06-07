@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sholatsubuh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/hitam"
+            android:justificationMode="inter_word"
+            android:text="SHOLAT SUBUH\n\nShalat bukan hanya sekedar kewajiban,yang apabila tidak dilaksanakan akan berdosa dan masuk neraka, melainkan juga merupakan kebutuhan secara ruhani maupun jasmani. “Shalat” merupakan salah satu sarana yang paling utama dalam hubungan antara “manusia” dengan Allah Subhanahu wa Ta’ala, hubungan yang sangat dibutuhkan oleh jiwanya.”
+            \n\nPastikan selama sholat pandangan mata menantap tempat Sujud, dan melakukan sholat secara urut sesuai dengan ajaran Nabi.
+            \n\nWaktu Subuh adalah waktu yang paling baik untuk mendapatkan rahmat dan ridha Allah. Allah SWT berfirman, ''Dan bersabarlah kamu bersama-sama dengan orang-orang yang menyeru Tuhannya di pagi dan senja hari dengan mengharap keridhaan-Nya; dan janganlah kedua matamu berpaling dari mereka (karena) mengharapkan perhiasan kehidupan dunia; dan janganlah kamu mengikuti orang yang hatinya telah Kami lalaikan dari mengingat Kami, serta menuruti hawa nafsunya dan adalah keadaannya itu melewati batas.'' (QS al-Kahfi [18]: 28).
+            \n\nKeutamaan shalat Subuh yang lain adalah Allah SWT kelak akan memberikan pahala yang melebihi keindahan dunia dan isinya, sebagaimana telah disebutkan dalam satu riwayat Imam at-urmuzi: ''Dari Aisyah ra telah bersabda Rasulullah SAW, Dua rakat shalat Fajar pahalanya lebih indah dari pada dunia dan isinya.''
+            \n\n1. Pahala shalat malam satu malam penuh.
+            \n\nDiriwayatkan Muslim dari Utsman bin Affan ra berkata; Rasulullah SAW bersabda,''Barangsiapa yang shalat Isya berjamaah maka seakan-akan dia telah shalat setengah malam. Dan barangsiapa shalat Subuh berjamaah, maka seakan-akan dia telah melaksanakan shalat malam satu malam penuh.'' Hadits riwayat Muslim.
+            \n\n2. Sumber cahaya di hari kiamat
+            \n\nShalat Subuh merupakan sumber dari segala sumber cahaya di hari kiamat. Di hari itu, semua sumber cahaya di dunia akan padam. Matahari akan digulung. Ibadahlah yang akan menerangi pelakunya.
+            \n\n3. Surga yang dijanjikan
+            \n\nDiriwayatkan dari Abu Musa al-Asy'ari ra ia berkata Rasulullah SAW bersabda: ''Barangsiapa yang shalat dua waktu yang dingin maka akan masuk surga.'' (HR Al Bukhari). Dua waktu yang dingin itu adalah shalat Subuh dan shalat ashar.
+            \n\n4. Melihat Allah
+            \n\nMereka yang menjaga shalat Subuh dan ashar, dijanjikan kelak di surga akan melihat Allah SWT. Hadis Rasulullah SAW yang diriwayatkan Bukhari dan Muslim dari Jarir bin Abdullah ra artinya: ''Kami sedang duduk bersama Rasulullah SAW, ketika melihat bulan purnama. Beliau berkata, ''Sungguh, kalian akan melihat Rabb kalian sebagaimana kalian melihat bulan yang tidak terhalang dalam melihatnya. Apabila kalian mampu, janganlah kalian menyerah dalam melakukan shalat sebelum terbit matahari dan shalat sebelum terbenam matahari. Maka lakukanlah.'' (HR Al Bukhari dan Muslim).
+            \n\n5. Berada di bawah lindungan Allah SWT
+            \n\nRasulullah SAW memberi janji, bila shalat Subuh dikerjakan, maka Allah akan melindungi siapa pun yang mengerjakannya seharian penuh. Hadits yang diriwayatkan dari Jundab bin Sufyan Rasulullah SAW bersabda: ''Barangsiapa yang menunaikan shalat Subuh maka ia berada dalam jaminan Allah. Maka jangan coba-coba membuat Allah membuktikan janji-Nya. Barangsiapa yang membunuh orang yang menunaikan shalat Subuh, Allah akan menuntutnya, sehingga Ia akan membenamkan mukanya ke dalam neraka. (HR Muslim, at-Tirmizi dan Ibnu Majah).
+            \n\n\n\n\n\n"
+            android:layout_margin="15dp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Surat Juz 30"
+        android:onClick="juz30"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="carasholatsubuh"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:text="Cara Sholat"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="videosholatsubuh"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:text="Video"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

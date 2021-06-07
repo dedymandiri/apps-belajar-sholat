@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tentang_Kami">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="TENTANG KAMI"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/hitam"
+        android:textSize="17dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:justificationMode="inter_word"
+        android:text="E-sholat merupakan sebuah media pembelajaran dengan digitalisasi tentang bagaimana tata cara sholat fardhu yang ditampilkan melalui aplikasi android.
+        \n\nAplikasi ini juga selain menyediankan tentang bagaimana belajar sholat juga ada fitur untuk melihat atau mengukur seberapa paham adik-adik dalam
+        memahami sholat fardhu dengan menggunakan soal latihan berbentuk pilihan ganda. " />
+
+    </LinearLayout>
+
+</RelativeLayout>

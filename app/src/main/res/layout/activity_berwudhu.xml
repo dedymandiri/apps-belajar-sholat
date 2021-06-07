@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Berwudhu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hitam"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
+        android:text="BERWUDHU\n\nIbadah sholat baik wajib maupun sunnah mengharuskan kita untuk bersuci. Salah satunya dengan wudhu. Sebagai syarat sah sholat, alangkah baiknya untuk memahami bacaan dan tata caranya berikut ini.
+        \n\nWudhu dilakukan untuk menghilangkan hadats besar maupun kecil. Dikutip dari buku yang berjudul Panduan Terlengkap Ibadah Muslim Sehari-hari karangan KH. Muhammad Habibillah disebutkan bahwa niat wudhu dilakukan bersamaan dengan membasuh muka. Adapun bacaannya sebagai berikut,
+        \n\nنَوَيْتُ الْوُضُوْءَ لِرَفْعِ الْحَدَثِ اْلاَصْغَرِ فَرْضًا ِللهِ تَعَالَى
+        \n\nArab-latin : Nawaitul whuduua liraf'il hadatsil asghari fardal lillaahi ta'aalaa.
+        \n\nArtinya : Saya niat berwudhu untuk menghilangkan hadats kecil fardhu karena Allah Ta'ala
+        \n\nSyarat Wudhu\n
+        \n1. Beragama Islam
+        \n2. Dapat membedakan mana yang baik dan yang buruk (tamyiz)
+        \n3. Suci dari hadats kecil dan besar
+        \n4. Menggunakan air yang suci dan menyucikan
+        \n5. Tidak ada benda-benda, seperti lem, getah, atau cat yang dapat menghalangi sampainya air ke anggota wudhu, dan
+        \v6. Mengetahui fardhu dan sunnah wudhu
+        \n\nFardhu Wudhu
+        \n\nFardu wudhu menjadi penentu syarat sahnya seseorang dalam melaksanakan wudhu, sebagai berikut
+        \n\n1. Niat. Membaca niat dilakukan bersamaan dengan membasuh muka
+        \n2. Membasuh seluruh muka mulai dari tumbuhnya rambut hingga bagian bawah dagu dan dari telinga kanan sampai telinga kiri
+        \n3. Membasuh kedua tangan hingga siku
+        \n4. Mengusap sebagian rambut kepala
+        \n5. Membasuh kedua kaki hingga mata kaki
+        \n6. Tertib. Artinya melaksanakan fardu-fardu di atas secara berurutan
+        \n\nSunnah Wudhu
+\n\nRasulullah mengajarkan beberapa sunnah dalam berwudhu. Sunnah wudhu memiliki banyak keutamaan di sisi Allah. Berikut sunnahnya,
+\n
+\n1. Membaca basmallah ketika akan memulai wudhu
+\n2. Membasuh kedua tangan hingga pergelangan
+\n3. Berkumur-kumur
+\n4. Membasuh lubang hidung
+\n5. Menyapu seluruh kepala saat mengerjakan fardhu yang keempat
+\n6. Mendahulukan anggota tubuh yang kanan daripada yang kiri, seperti tangan kanan didahulukan baru kemudian tangan kiri
+\n7. Menyapu kedua telinga dari bagian luar hingga bagian dalam
+\n8. Setiap basuhan atau usapan dilakukan sebanyak tiga kali
+\n9. Menyela-nyela jari tangan dan kaki
+\n10. Membaca doa setelah wudhu
+\n\nPada sunnah ke-10 dianjurkan untuk membaca doa setelah wudhu. Adapun bacaannya sebagai berikut,
+\n\nاَشْهَدُ اَنْ لَااِلٰهَ اِلَّااللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللّٰهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ، وَجْعَلْنِيْ مِنْ عِبَادِكَ الصَّالِحِيْنَ
+\n\nArab-latin: Asyhadu allaa ilaahah illallaah wahdahuu laa syariika lahuu wa asyhadu anna muhammadan 'abduhuu wa rosuuluh. Allaahummaj'alnii minat tawwaabiina waj'alnii minal mutathahhiriina, waj'alnii min 'ibadikash shaalihiin.
+\n\nArtinya: Aku bersaksi, tiada Tuhan selain Allah Yang Maha Tunggal, tiada sekutu bagi-Nya. Dan aku bersaksi bahwa Nabi Muhammad adalah hamba dan Utusan-Nya. Ya Allah, jadikanlah aku orang yang bertaubat dan jadikanlah aku orang yang suci dan jadikanlah aku dari golongan hamba-hamba Mu yang shalih.
+\n\n\n\n\n\n"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Video Berwudhu"
+        android:onClick="videowudhu"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

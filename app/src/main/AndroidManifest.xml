@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.belajarsholat">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".video_sholatisya" />
+        <activity android:name=".video_sholatmaghrib" />
+        <activity android:name=".video_sholatashar" />
+        <activity android:name=".video_sholatdzhuhur" />
+        <activity android:name=".Video_Wudhu" />
+        <activity android:name=".sholatsubuh" />
+        <activity android:name=".Cara_Sholatsubuh" />
+        <activity android:name=".List_Surat_Pendek" />
+        <activity android:name=".video_sholatsubuh" />
+        <activity android:name=".Tentang_Kami" />
+        <activity android:name=".Berwudhu" />
+        <activity android:name=".Sholat_Isya" />
+        <activity android:name=".Sholat_Maghrib" />
+        <activity android:name=".Sholat_Ashar" />
+        <activity android:name=".Sholat_dzuhur" />
+        <activity android:name=".Menu_Sholat" />
+        <activity android:name=".Hasilquiz" />
+        <activity android:name=".quiz" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hasilquiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/hitam"
+        android:textSize="25dp"
+        android:text="NILAI LATIHAN"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dari 10 Soal"
+        android:gravity="center"
+        android:textColor="@color/hitam"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"
+        android:textColor="@color/hitam"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Hasil Jawaban Kamu ="/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_marginTop="230dp"
+        android:textColor="@color/hitam"
+        android:textSize="60sp"
+        android:text="100"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="ulangi"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:text="Coba Quiz Lagi"/>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="rekomendasi"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/putih"
+        android:text="Rekomendasi Materi"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

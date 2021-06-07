@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/mesjid2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belajar Sholat"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/putih"
+        android:layout_marginTop="148dp"
+        android:layout_marginLeft="15dp"/>
+
+    //MENU BERWUDHU
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="berwudhu"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:onClick="berwudhu"
+            android:background="@drawable/berwudhu"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BERWUDHU"/>
+
+    </LinearLayout>
+
+    //MENU SHOLAT FARDHU
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:onClick="sholat"
+        android:layout_marginLeft="175dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@drawable/sholat_fardhu"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SHOLAT FARDHU"/>
+
+    </LinearLayout>
+
+    //MENU QUIZZ
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="Latihan"
+        android:layout_marginTop="400dp">
+
+        <ImageView
+            android:id="@+id/menuquiz"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@drawable/kuis"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LATIHAN"/>
+
+    </LinearLayout>
+
+    //MENU TENTANG KAMI
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        android:onClick="tentang_kami"
+        android:layout_marginLeft="170dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@drawable/tentang_kami"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TENTANG KAMI"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

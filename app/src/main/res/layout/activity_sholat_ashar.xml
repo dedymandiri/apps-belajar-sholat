@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sholat_Ashar">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/hitam"
+        android:justificationMode="inter_word"
+        android:text="SHOLAT ASHAR\n\nManusia merupakan makhluk ciptaan Allah Subhanahu wa ta’ala. Manusia diciptakan dengan akal dan pikiran dan menjadikannya makhluk yang paling sempurna yang telah Allah Subhanahu wa ta’ala. Selain itu juga, Allah Subhanahu wa ta’ala mengutus para nabi dan rasul untuk mengajarkan tentang Islam. Nabi Muhammad Shallallahu ‘alaii wa sallam merupakan utusan dan nabi terakhir yang Allah Subhanahu wa ta’ala perintahkan untuk menyebarkan Islam ke seluruh dunia. Salah satu yang diperintahkan Allah Subhanahu wa ta’ala yaitu melaksanakan ibadah.
+            \n\nNiat Sholat Ashar
+            \n\nاُصَلِّى فَرْضَ الْعَصْرِاَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً مَأْمُوْمًا ِللهِ تَعَالَى
+            \n\nUshallii fardhal ‘ashri arba’a raka’aatin mustaqbilal qiblati adaa-an ma’muuman lillaahi ta’aala.
+            \n\nArtinya:\n“Aku niat melaksanakan sholat fardhu Ashar sebanyak empat rakaat sambil menghadap kiblat, tepat waktu, sebagai makmum karena Allah ta’ala.”
+            \n\nSholat Ashar dilakukan sebanyak empat rakaat. Sholat Ashar dapat dilakukan secara berjamaah atau sendiri (munfarid). Melaksanakan sholat Ashar secara berjamaah jauh lebih baik karena pahala yang didapatkan berkali-kali lipat yaitu sekitar 27 kali. Selain itu, sholat Ashar yang dilaksanakan secara berjamaah memiliki banyak keutamaan lainnya.
+            \n\nPerintah melaksanakan sholat Ashar tertera pada salah satu ayat Al Quran yaitu pada surat Hud ayat 114, Allah Subhanahu wa ta’ala berfirman,
+            \n\nوَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِنَ اللَّيْلِ ۚ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ ۚ ذَٰلِكَ ذِكْرَىٰ لِلذَّاكِرِينَ
+            \n\nArtinya: “Dan dirikanlah sholat itu pada kedua tepi siang (pagi dan petang) dan pada bagian permulaan daripada malam. Sesungguhnya perbuatan-perbuatan yang baik itu menghapuskan (dosa) perbuatan-perbuatan yang buruk. Itulah peringatan bagi orang-orang yang ingat.” (QS. Hud ayat 114)
+            Waktu sholat Ashar yaitu pada saat bayangan lebih panjang dari benda aslinya.
+            \n\nWaktu Sholat Ashar
+            \n\nWaktu sholat Ashar yaitu pada saat bayangan lebih panjang dari benda aslinya. Sedangkan pelaksanaan sholat Ashar berakhir saat matahari akan terbenam.
+            \n\nWaktu pelaksanaan sholat fardhu lima waktu memiliki keutamaan yang sangat baik untuk tubuh kita. Sholat merupakan ibadah yang tidak hanya suatu kewajiban yang harus dilakukan oleh tiap umat Islam, tetapi juga dengan melaksanakan sholat akan memberikan hal positif untuk diri dan tubuh kita, serta kebahagiaan di dunia dan di akhirat.
+            \n\n\n\n\n\n"
+        android:layout_margin="15dp"/>
+
+</ScrollView>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_margin="15dp"
+android:layout_alignParentBottom="true">
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Surat Juz 30"
+    android:onClick="juz30ashar"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/putih"
+    android:layout_weight="1"
+    />
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:onClick="carasholatashar"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/putih"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp"
+    android:text="Cara Sholat"/>
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:onClick="videosholatashar"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/putih"
+    android:layout_marginLeft="5dp"
+    android:layout_weight="1"
+    android:text="Video"/>
+
+</LinearLayout>
+    </RelativeLayout>
