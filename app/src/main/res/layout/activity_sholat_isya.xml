@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sholat_Isya">
+    tools:context=".menu_sholat.Sholat_Isya">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:textColor="@color/hitam"
-            android:justificationMode="inter_word"
             android:text="SHOLAT ISYA\n\nSholat isya. Merupakan sholat wajib terakhir yang dikerjakan pada waktu Isya, yakni ketika bulan mulai tampak dan hari berganti menjadi malam. Shalat isya dikerjakan tepat setelah kita selesai melaksanakan sholat maghrib.
-            \n\nJeda sholat ini dari sholat maghrib hanya sekitar 1-1.5 jam saja Salat isya menjadi satu dari lima salat wajib yang harus dikerjakan laki-laki dan perempuan yang tidak berhalangan. Boleh dikerjakan secara sendiri-sendiri di rumah maupun secara berjamaah dengan yang lainnya.
+            \n\nJeda sholat ini dari sholat maghrib hanya sekitar 1-1.5 jam saja Salat isya menjadi satu dari lima salat wajib yang harus dikerjakan laki-laki dan perempuan yang tidak berhalangan. Boleh dikerjakan secara sendiri-sendiri di rumah maupun secara berjamaah dengan yang \nlainnya.
             \n\nTotal rakaat yang harus dikerjakan pada waktu shalat Isya adalah sebanyak 4 rakaat. Sama seperti shalat subuh dan ashar, pada saat menjalankan shalat ini, diusahakan untuk membaca suratan dengan lantang pada rekaat pertama dan kedua.
             \n\nNiat sholat isya
-            \n\nاُصَلّى فَرْضَ الْعِشَاءِ اَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً مَأْمُوْمًا ِللهِ تَعَالَى
             \n\nUshollii fardhol ‘isyaa’I arba’a raka’aatim mustaqbilal qiblati adaa-an ma’muuman lillaahi ta’aala.
             \n\nArtinya :\n“Aku berniat shalat fardu ‘Isya empat raka’at menghadap kiblat sebagai ma’mum karena Allah Ta’ala.”
             \n\nWaktu Pelaksanaan
@@ -31,8 +30,7 @@
             \n\nBahwasannya rasulullah SAW bersabda yang artinya : “Jika saja mereka mengetahui apa yang terdapat dalam shalat subuh dan ashar, niscaya mereka akan pergi melaksanakannya meski dengan merangkak.” (HR Bukhari)
             \n\nDan juga Rasulullah Bersabda yang artinya : “Tidak ada shalat yang lebih berat bagi orang-orang munafik daripada shalat subuh dan isya. Jika mereka mengetahui apa yang terdapat dalam kedua shalat itu, mereka pasti pergi melaksanakannya meski dengan merangkak.” (HR Bukhari)
             \n\n\n\n\n\n
-            "
-            android:layout_margin="15dp"/>
+            "/>
     </ScrollView>
 
     <LinearLayout

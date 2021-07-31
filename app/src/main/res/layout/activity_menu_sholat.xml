@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e4e4e4"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Menu_Sholat">
 
-    <TextView
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Menu Sholat Fardhu"
-        android:textSize="18dp"
-        android:gravity="center"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/putih"
-        android:textStyle="bold"/>
+        android:layout_height="150dp"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-     <androidx.core.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="10dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-125dp">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -48,7 +48,7 @@
                     android:onClick="subuh"
                     android:layout_margin="10dp"
                     card_view:cardBackgroundColor="@color/putih"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="10dp"
                     card_view:cardElevation="10dp"
                     card_view:cardPreventCornerOverlap="false" >
 
@@ -62,8 +62,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
-                            android:layout_margin="5dp"
-                            android:src="@drawable/kuis"/>
+                            android:layout_marginLeft="-50dp"
+                            android:src="@drawable/gambarsholat1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                     android:onClick="dzuhur"
                     android:layout_margin="10dp"
                     card_view:cardBackgroundColor="@color/putih"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="10dp"
                     card_view:cardElevation="10dp" >
 
                     <LinearLayout
@@ -100,7 +100,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:layout_margin="5dp"
-                            android:src="@drawable/kuis"/>
+                            android:src="@drawable/gambarsholat2"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
                     android:layout_margin="10dp"
                     android:onClick="ashar"
                     card_view:cardBackgroundColor="@color/putih"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="10dp"
                     card_view:cardElevation="10dp" >
 
 
@@ -150,7 +150,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:layout_margin="5dp"
-                            android:src="@drawable/kuis"/>
+                            android:src="@drawable/gambarsholat3"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -174,7 +174,7 @@
                     android:layout_margin="10dp"
                     android:onClick="maghrib"
                     card_view:cardBackgroundColor="@color/putih"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="10dp"
                     card_view:cardElevation="10dp">
 
                     <LinearLayout
@@ -187,7 +187,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:layout_margin="5dp"
-                            android:src="@drawable/kuis"/>
+                            android:src="@drawable/gambarsholat5"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -204,7 +204,7 @@
             </LinearLayout>
 
 
-            \\Menu Sholat isya
+            //Menu Sholat isya
             <LinearLayout
                 android:clipToPadding="false"
                 android:gravity="center"
@@ -222,7 +222,7 @@
                     android:layout_margin="10dp"
                     android:onClick="isya"
                     card_view:cardBackgroundColor="@color/putih"
-                    card_view:cardCornerRadius="4dp"
+                    card_view:cardCornerRadius="10dp"
                     card_view:cardElevation="10dp" >
 
 
@@ -235,8 +235,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
-                            android:layout_margin="5dp"
-                            android:src="@drawable/kuis"/>
+                            android:layout_margin="13dp"
+                            android:src="@drawable/gambarsholat4"/>
 
                         <TextView
                             android:layout_width="wrap_content"

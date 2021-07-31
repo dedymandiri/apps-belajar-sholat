@@ -10,5 +10,7 @@ public class Tentang_Kami extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tentang_kami);
+
+
     }
 }

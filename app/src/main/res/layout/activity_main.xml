@@ -4,114 +4,289 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:background="@drawable/mesjid2"/>
+        android:layout_height="150dp"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Belajar Sholat"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:textColor="@color/putih"
-        android:layout_marginTop="148dp"
-        android:layout_marginLeft="15dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
-    //MENU BERWUDHU
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp">
+
+            <TextView
+                android:id="@+id/etMainUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dedi Maulana"
+                android:padding="20dp"
+                android:textAllCaps="true"
+                android:textColor="@color/oranye"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/etMainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dedi Maulana"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textAllCaps="true"
+                android:textColor="@color/oranye"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Selamat datang di aplikasi pembelajaran sholat fardhu yang dilengkapi dengan fitur utama nya yaitu fitur latihan dan fitur perekomendasi materi"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+
+                app:layout_constraintStart_toStartOf="@+id/etMainName"
+                app:layout_constraintTop_toBottomOf="@+id/etMainName">
+            </me.biubiubiu.justifytext.library.JustifyTextView>
+
+
+            <ImageButton
+                android:id="@+id/profileB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="berwudhu"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
 
-        <ImageButton
-            android:layout_width="160dp"
-            android:layout_height="120dp"
-            android:onClick="berwudhu"
-            android:background="@drawable/berwudhu"
-            android:layout_margin="10dp"/>
-
-        <TextView
-            android:layout_width="80dp"
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="BERWUDHU"/>
+            android:layout_marginTop="170dp">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2">
 
-    //MENU SHOLAT FARDHU
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:orientation="vertical"
-        android:onClick="sholat"
-        android:layout_marginLeft="175dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-        <ImageView
-            android:layout_width="160dp"
-            android:layout_height="120dp"
-            android:background="@drawable/sholat_fardhu"
-            android:layout_margin="10dp"
-            />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick="berwudhu"
+                        card_view:cardBackgroundColor="@color/putih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false">
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="SHOLAT FARDHU"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-    </LinearLayout>
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="15dp"
+                                android:background="@drawable/menu1" />
 
-    //MENU QUIZZ
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:onClick="Latihan"
-        android:layout_marginTop="400dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-10dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Berwudhu"
+                                android:textColor="@color/hitam" />
 
-        <ImageView
-            android:id="@+id/menuquiz"
-            android:layout_width="160dp"
-            android:layout_height="120dp"
-            android:background="@drawable/kuis"
-            android:layout_margin="15dp"/>
 
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="LATIHAN"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
-    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick="sholat"
+                        card_view:cardBackgroundColor="@color/putih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="10dp">
 
-    //MENU TENTANG KAMI
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="400dp"
-        android:onClick="tentang_kami"
-        android:layout_marginLeft="170dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="160dp"
-            android:layout_height="120dp"
-            android:background="@drawable/tentang_kami"
-            android:layout_margin="15dp"/>
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/menu2" />
 
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="TENTANG KAMI"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Sholat Fardhu"
+                                android:textColor="@color/hitam" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="Latihan"
+                        card_view:cardBackgroundColor="@color/putih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/menu3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Latihan"
+                                android:textColor="@color/hitam" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick="tentang_kami"
+                        card_view:cardBackgroundColor="@color/putih"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/menu4"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Tentang Kami"
+                                android:textColor="@color/hitam" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
 
     </LinearLayout>
 
 </RelativeLayout>
+

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/putih"
     tools:context=".splashscreen">
 
     <LinearLayout
@@ -15,9 +16,9 @@
     <ImageView
         android:id="@+id/imgGif"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/sholat_fardhu"/>
+        app:srcCompat="@drawable/logo"/>
 
     </LinearLayout>
 
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="From\nDedi Maulana"
         android:gravity="center"
+        android:textColor="@color/hitam"
         android:layout_marginTop="500dp"
         android:textSize="10dp"/>
 

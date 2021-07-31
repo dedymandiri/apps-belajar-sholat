@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.belajarsholat.cara_sholat.Cara_Sholatsubuh;
+import com.example.belajarsholat.video_sholat.Video_Wudhu;
+
 public class Berwudhu extends AppCompatActivity {
 
     @Override
@@ -16,6 +19,11 @@ public class Berwudhu extends AppCompatActivity {
 
     public void videowudhu(View view) {
         Intent intent = new Intent(Berwudhu.this, Video_Wudhu.class);
+        startActivity(intent);
+    }
+
+    public void carasholatashar(View view) {
+        Intent intent = new Intent(Berwudhu.this, Cara_Sholatsubuh.class);
         startActivity(intent);
     }
 }

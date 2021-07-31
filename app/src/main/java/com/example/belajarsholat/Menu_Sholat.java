@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.belajarsholat.menu_sholat.Sholat_Ashar;
+import com.example.belajarsholat.menu_sholat.Sholat_Isya;
+import com.example.belajarsholat.menu_sholat.Sholat_Maghrib;
+import com.example.belajarsholat.menu_sholat.Sholat_dzuhur;
+import com.example.belajarsholat.menu_sholat.sholatsubuh;
+
 public class Menu_Sholat extends AppCompatActivity {
 
     @Override

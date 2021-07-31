@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.belajarsholat">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -11,35 +12,83 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".video_sholatisya" />
-        <activity android:name=".video_sholatmaghrib" />
-        <activity android:name=".video_sholatashar" />
-        <activity android:name=".video_sholatdzhuhur" />
-        <activity android:name=".Video_Wudhu" />
-        <activity android:name=".sholatsubuh" />
-        <activity android:name=".Cara_Sholatsubuh" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".splashscreen" />
+        <activity
+            android:name=".login_register.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".login_register.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".surat_pendek.Annaba" />
+        <activity android:name=".surat_pendek.Annaziat" />
+        <activity android:name=".surat_pendek.Abasaa" />
+        <activity android:name=".surat_pendek.Attakwir" />
+        <activity android:name=".surat_pendek.Alinfithar" />
+        <activity android:name=".surat_pendek.Almutaffifin" />
+        <activity android:name=".surat_pendek.Alinsyiqiq" />
+        <activity android:name=".surat_pendek.Alburuj" />
+        <activity android:name=".surat_pendek.Atthoriq" />
+        <activity android:name=".surat_pendek.Alalaa" />
+        <activity android:name=".surat_pendek.Alghasiyah" />
+        <activity android:name=".surat_pendek.Alfajr" />
+        <activity android:name=".surat_pendek.Albalad" />
+        <activity android:name=".surat_pendek.Assyams" />
+        <activity android:name=".surat_pendek.Allail" />
+        <activity android:name=".surat_pendek.Adduha" />
+        <activity android:name=".surat_pendek.Alinsyirah" />
+        <activity android:name=".surat_pendek.Attiin" />
+        <activity android:name=".surat_pendek.Alalaq" />
+        <activity android:name=".surat_pendek.Alqodr" />
+        <activity android:name=".surat_pendek.Albayyinah" />
+        <activity android:name=".surat_pendek.Alzalzalah" />
+        <activity android:name=".surat_pendek.Alaadiyat" />
+        <activity android:name=".surat_pendek.Alqoriah" />
+        <activity android:name=".surat_pendek.Attakasur" />
+        <activity android:name=".surat_pendek.Alasr" />
+        <activity android:name=".surat_pendek.Alhumazah" />
+        <activity android:name=".surat_pendek.Alfiil" />
+        <activity android:name=".surat_pendek.Quraisy" />
+        <activity android:name=".surat_pendek.Almaun" />
+        <activity android:name=".surat_pendek.Alkausar" />
+        <activity android:name=".surat_pendek.Alkafirun" />
+        <activity android:name=".surat_pendek.Annasr" />
+        <activity android:name=".surat_pendek.Allahab" />
+        <activity android:name=".surat_pendek.Alikhlas" />
+        <activity android:name=".surat_pendek.Alfalaq" />
+        <activity android:name=".surat_pendek.Annas" />
+        <activity android:name=".surat_pendek.Alfatihah" />
+        <activity android:name=".video_sholat.video_sholatisya" />
+        <activity android:name=".video_sholat.video_sholatmaghrib" />
+        <activity android:name=".video_sholat.video_sholatashar" />
+        <activity android:name=".video_sholat.video_sholatdzhuhur" />
+        <activity android:name=".video_sholat.Video_Wudhu" />
+        <activity android:name=".menu_sholat.sholatsubuh" />
+        <activity android:name=".cara_sholat.Cara_Sholatsubuh" />
         <activity android:name=".List_Surat_Pendek" />
-        <activity android:name=".video_sholatsubuh" />
+        <activity android:name=".video_sholat.video_sholatsubuh" />
         <activity android:name=".Tentang_Kami" />
+        <activity android:name=".menu_sholat.Sholat_Isya" />
+        <activity android:name=".menu_sholat.Sholat_Maghrib" />
+        <activity android:name=".menu_sholat.Sholat_Ashar" />
+        <activity android:name=".menu_sholat.Sholat_dzuhur" />
+        <activity
+            android:name=".Menu_Sholat"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".fitur_quiz.Hasilquiz" />
+        <activity android:name=".fitur_quiz.quiz" />
         <activity android:name=".Berwudhu" />
-        <activity android:name=".Sholat_Isya" />
-        <activity android:name=".Sholat_Maghrib" />
-        <activity android:name=".Sholat_Ashar" />
-        <activity android:name=".Sholat_dzuhur" />
-        <activity android:name=".Menu_Sholat" />
-        <activity android:name=".Hasilquiz" />
-        <activity android:name=".quiz" />
-        <activity android:name=".splashscreen">
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

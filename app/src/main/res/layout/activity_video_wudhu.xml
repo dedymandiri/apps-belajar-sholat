@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Video_Wudhu">
+    tools:context=".video_sholat.Video_Wudhu">
 
     <TextView
         android:layout_width="match_parent"

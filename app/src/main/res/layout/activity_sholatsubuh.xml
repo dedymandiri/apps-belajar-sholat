@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sholatsubuh">
+    tools:context=".menu_sholat.sholatsubuh">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:textColor="@color/hitam"
-            android:justificationMode="inter_word"
             android:text="SHOLAT SUBUH\n\nShalat bukan hanya sekedar kewajiban,yang apabila tidak dilaksanakan akan berdosa dan masuk neraka, melainkan juga merupakan kebutuhan secara ruhani maupun jasmani. “Shalat” merupakan salah satu sarana yang paling utama dalam hubungan antara “manusia” dengan Allah Subhanahu wa Ta’ala, hubungan yang sangat dibutuhkan oleh jiwanya.”
             \n\nPastikan selama sholat pandangan mata menantap tempat Sujud, dan melakukan sholat secara urut sesuai dengan ajaran Nabi.
             \n\nWaktu Subuh adalah waktu yang paling baik untuk mendapatkan rahmat dan ridha Allah. Allah SWT berfirman, ''Dan bersabarlah kamu bersama-sama dengan orang-orang yang menyeru Tuhannya di pagi dan senja hari dengan mengharap keridhaan-Nya; dan janganlah kedua matamu berpaling dari mereka (karena) mengharapkan perhiasan kehidupan dunia; dan janganlah kamu mengikuti orang yang hatinya telah Kami lalaikan dari mengingat Kami, serta menuruti hawa nafsunya dan adalah keadaannya itu melewati batas.'' (QS al-Kahfi [18]: 28).
@@ -31,8 +31,8 @@
             \n\nMereka yang menjaga shalat Subuh dan ashar, dijanjikan kelak di surga akan melihat Allah SWT. Hadis Rasulullah SAW yang diriwayatkan Bukhari dan Muslim dari Jarir bin Abdullah ra artinya: ''Kami sedang duduk bersama Rasulullah SAW, ketika melihat bulan purnama. Beliau berkata, ''Sungguh, kalian akan melihat Rabb kalian sebagaimana kalian melihat bulan yang tidak terhalang dalam melihatnya. Apabila kalian mampu, janganlah kalian menyerah dalam melakukan shalat sebelum terbit matahari dan shalat sebelum terbenam matahari. Maka lakukanlah.'' (HR Al Bukhari dan Muslim).
             \n\n5. Berada di bawah lindungan Allah SWT
             \n\nRasulullah SAW memberi janji, bila shalat Subuh dikerjakan, maka Allah akan melindungi siapa pun yang mengerjakannya seharian penuh. Hadits yang diriwayatkan dari Jundab bin Sufyan Rasulullah SAW bersabda: ''Barangsiapa yang menunaikan shalat Subuh maka ia berada dalam jaminan Allah. Maka jangan coba-coba membuat Allah membuktikan janji-Nya. Barangsiapa yang membunuh orang yang menunaikan shalat Subuh, Allah akan menuntutnya, sehingga Ia akan membenamkan mukanya ke dalam neraka. (HR Muslim, at-Tirmizi dan Ibnu Majah).
-            \n\n\n\n\n\n"
-            android:layout_margin="15dp"/>
+            \n\n\n\n\n\n"/>
+
     </ScrollView>
 
     <LinearLayout

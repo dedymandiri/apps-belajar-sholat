@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sholat_Maghrib">
+    tools:context=".menu_sholat.Sholat_Maghrib">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="359dp"
             android:layout_height="match_parent"
+            android:layout_margin="15dp"
             android:textColor="@color/hitam"
-            android:justificationMode="inter_word"
             android:text="SHOLAT MAGHRIB\n\nSholat maghrib merupakan salah satu sholat lima waktu yang wajib dikerjakan tiap Muslim. Sholat ini terdiri atas tiga rakaat. Sholat maghrib ini waktunya tergolong pendek yakni dimulai dari terbenamnya matahari sampai hilangnya mega merah.
             \n\nPelaksanaan sholat fardhu termasuk sholat maghrib ini sudah ditentukan waktunya sebagaimana termaktub dalam Alquran.
-            \n\nفَاِذَا قَضَيْتُمُ الصَّلٰوةَ فَاذْكُرُوا اللّٰهَ قِيَامًا وَّقُعُوْدًا وَّعَلٰى جُنُوْبِكُمْۚ فَاِذَا اطْمَأْنَنْتُمْ فَاَقِيْمُوا الصَّلٰوةَۚ اِنَّ الصَّلٰوةَ كَانَتْ عَلَى الْمُؤْمِنِيْنَ كِتٰبًا مَّوْقُوْتًا
-            \n\nMaka apabila kamu telah menyelesaikan salat(mu), ingatlah Allah di waktu berdiri, di waktu duduk dan di waktu berbaring. Kemudian apabila kamu telah merasa aman, maka dirikanlah shalat itu (sebagaimana biasa). Sungguh, salat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman. (QS. An Nisa: 103)
+             \n\nMaka apabila kamu telah menyelesaikan salat(mu), ingatlah Allah di waktu berdiri, di waktu duduk dan di waktu berbaring. Kemudian apabila kamu telah merasa aman, maka dirikanlah shalat itu (sebagaimana biasa). Sungguh, salat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman. (QS. An Nisa: 103)
             \n\nNiat Sholat Maghrib
             \n\nSebelum melaksanakan sholat maghrib Muslim harus membaca niat. berikut bacaan niat sholat maghrib berjamaah:
-            \n\nأُصَلِّى فَرْضَ المَغْرِبِ ثَلاَثَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً (مَأْمُوْمًا/إِمَامًا) لله تَعَالَى.
-            \n\nUshalli fardhol maghribi tsalaatsa raka'aatin mustaqbilal qiblati adaa,an makmuman/imaman lillaahi ta'aala.
+             \n\nUshalli fardhol maghribi tsalaatsa raka'aatin mustaqbilal qiblati adaa,an makmuman/imaman lillaahi ta'aala.
             \n\nArtinya :\nSaya melakukan shalat fardhu maghrib sebanyak tiga rakaat dengan menghadap kiblat, pada waktunya (menjadi makmum/imam) karena Allah Ta’ala.
             \n\nKeutamaan sholat maghrib
             \n\nDi waktu Maghrib merupakan waktu di mana Nabi Adam ‘Alaihi sallam diterima tobatnya oleh Allah Subhanahu wa ta’ala. Adapun keutamaan dari melaksanakan sholat Maghrib berjamaah yaitu sebagai berikut:
@@ -45,10 +43,9 @@
             \n\n5. Sebagai penolong dari marabahaya
             \n\nSholat dapat membantu kita dalam marabahaya. Allah Subhanahu wa ta’ala akan melindungi kita. Karena sholat sebagai penolong bagi kita. Allah Subhanahu wa ta’ala berfirman,
             \n\nوَٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى ٱلْخَٰشِعِينَ
-            \n\nArtinya :\n “Jadikanlah sabar dan shalat sebagai penolongmu. Dan sesungguhnya yang demikian itu sungguh berat, kecuali bagi orang-orang yang khusyuk.” (QS. Al Baqarah ayat 45)
+            \n\nArtinya :\n “Jadikanlah sabar dan shalat sebagai penolongmu. Dan sesungguhnya yang demikian itu sungguh berat, kecuali bagi orang-orang yang khusyuk.\n” (QS. Al Baqarah ayat 45)
             \n\n\n\n\n\n\n
-            "
-            android:layout_margin="15dp"/>
+            "/>
     </ScrollView>
 
     <LinearLayout

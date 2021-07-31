@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".Cara_Sholatsubuh">
+    tools:context=".cara_sholat.Cara_Sholatsubuh">
 
     <TextView
         android:layout_width="fill_parent"
