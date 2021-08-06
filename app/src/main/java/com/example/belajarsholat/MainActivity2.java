@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.fitur_quiz.quiz;
+import com.example.belajarsholat.latihan.Latihan;
 import com.example.belajarsholat.login_register.LoginActivity;
 import com.example.belajarsholat.session.SessionManager;
 
@@ -67,7 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void Latihan(View view) {
-        Intent intent = new Intent(MainActivity2.this, quiz.class);
+        Intent intent = new Intent(MainActivity2.this, Latihan.class);
         startActivity(intent);
     }
 

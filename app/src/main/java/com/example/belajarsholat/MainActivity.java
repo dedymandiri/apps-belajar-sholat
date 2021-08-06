@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
     }
 
     public void Latihan(View view) {
-        Intent intent = new Intent(MainActivity.this, quiz.class);
+        Intent intent = new Intent(MainActivity.this, Menu_Sholat.class);
         startActivity(intent);
     }
 

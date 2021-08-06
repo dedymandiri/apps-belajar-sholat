@@ -4,6 +4,7 @@
     package="com.example.belajarsholat">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-feature android:name="android.hardware.type.watch" />
@@ -16,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".latihan.Input_user"></activity>
+        <activity android:name=".latihan.Latihan" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".splashscreen" />
         <activity
             android:name=".login_register.RegisterActivity"
@@ -76,9 +79,7 @@
         <activity android:name=".menu_sholat.Sholat_Maghrib" />
         <activity android:name=".menu_sholat.Sholat_Ashar" />
         <activity android:name=".menu_sholat.Sholat_dzuhur" />
-        <activity
-            android:name=".Menu_Sholat"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Menu_Sholat"/>
         <activity android:name=".fitur_quiz.Hasilquiz" />
         <activity android:name=".fitur_quiz.quiz" />
         <activity android:name=".Berwudhu" />
