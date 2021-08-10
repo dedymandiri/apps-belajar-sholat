@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "http://192.168.100.8/belajar-sholat/api/";
+    private static final String BASE_URL = "http://192.168.100.227/belajar-sholat/api/";
 
     private static Retrofit retrofit;
 

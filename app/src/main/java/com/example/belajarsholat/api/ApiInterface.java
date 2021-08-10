@@ -1,7 +1,7 @@
 package com.example.belajarsholat.api;
 
-import com.example.belajarsholat.model.login.Login;
-import com.example.belajarsholat.model.register.Register;
+import com.example.belajarsholat.Model.login.Login;
+import com.example.belajarsholat.Model.register.Register;
 
 import retrofit2.Call;
 import retrofit2.http.Field;

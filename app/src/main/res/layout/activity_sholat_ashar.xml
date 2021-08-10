@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_sholat.Sholat_Ashar">
+    tools:context=".Sholat_fardhu.Sholat_Ashar">
 
     <ScrollView
     android:layout_width="match_parent"

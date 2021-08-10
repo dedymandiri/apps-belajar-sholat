@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".latihan.Input_user">
+    tools:context=".Latihan_quiz.input_user">
 
     <EditText
         android:id="@+id/inputID"
@@ -13,13 +14,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="Ketikkan Nama"
+        android:hint="Masukkan Nama Anda"
         android:inputType="text" />
 
     <Button
         android:id="@+id/btnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OK" />
+        android:layout_marginTop="15dp"
+        android:background="@color/oranye"
+        android:textColor="@color/putih"
+        android:textSize="15dp"
+        android:text="Mulai" />
 
 </LinearLayout>

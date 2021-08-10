@@ -10,9 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.latihan.Latihan;
-import com.example.belajarsholat.login_register.LoginActivity;
-import com.example.belajarsholat.session.SessionManager;
+import com.example.belajarsholat.Fitur_latihan.quiz;
+import com.example.belajarsholat.Login_register.LoginActivity;
+import com.example.belajarsholat.Menu_utama.Berwudhu;
+import com.example.belajarsholat.Menu_utama.Menu_Sholat;
+import com.example.belajarsholat.Menu_utama.Tentang_Kami;
+import com.example.belajarsholat.Session.SessionManager;
 
 public class MainActivity2 extends AppCompatActivity {
     TextView etUsername, etName;
@@ -29,13 +32,13 @@ public class MainActivity2 extends AppCompatActivity {
         }
 
         etUsername = findViewById(R.id.etMainUsername);
-        etName = findViewById(R.id.etMainName);
+        //etName = findViewById(R.id.etMainName);
 
         username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
         name = sessionManager.getUserDetail().get(SessionManager.NAME);
 
         etUsername.setText(username);
-        etName.setText(name);
+        //etName.setText(name);
 
 
     }
@@ -67,7 +70,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void Latihan(View view) {
-        Intent intent = new Intent(MainActivity2.this, Latihan.class);
+        Intent intent = new Intent(MainActivity2.this, quiz.class);
         startActivity(intent);
     }
 
