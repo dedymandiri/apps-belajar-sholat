@@ -35,7 +35,7 @@
             android:layout_margin="20dp">
 
             <TextView
-                android:id="@+id/etMainUsername"
+                android:id="@+id/etMainName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dedi Maulana"
@@ -61,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:foregroundGravity="right"
                 android:layout_marginLeft="210dp"
+                android:onClick="profile"
                 android:src="@drawable/profile"
                 app:civ_border_color="@color/hitam"
                 tools:layout_editor_absoluteX="59dp"

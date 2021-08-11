@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Fitur_latihan.Periksa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebutkan berapa jumlah rakaat dalam sholat dzuhur adalah?"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/hitam"
+        android:id="@+id/kuis"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/pilihan"
+        android:layout_margin="15dp"
+        android:justificationMode="inter_word"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. 2 Rakaat"
+            android:textColor="@color/hijau"
+            android:id="@+id/pilihanA"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. 3 Rakaat"
+            android:id="@+id/pilihanB"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. 4 Rakaat"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/pilihanC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. 5 Rakaat"
+            android:id="@+id/pilihanD"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kembali"
+            android:onClick="kembali"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

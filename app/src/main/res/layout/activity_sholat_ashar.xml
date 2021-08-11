@@ -69,4 +69,4 @@ android:layout_alignParentBottom="true">
     android:text="Video"/>
 
 </LinearLayout>
-    </RelativeLayout>
+</RelativeLayout>

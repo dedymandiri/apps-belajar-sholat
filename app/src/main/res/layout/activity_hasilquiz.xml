@@ -52,32 +52,43 @@
         android:text="100"/>
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="15dp"
-        android:gravity="center"
         android:layout_alignParentBottom="true">
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="ulangi"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/putih"
-        android:text="Coba Quiz Lagi"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ulangi"
+            android:onClick="ulangi"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:layout_weight="1"
+            />
 
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="periksa"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Periksa"/>
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="rekomendasi"
-        android:layout_marginLeft="5dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/putih"
-        android:text="Rekomendasi"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="rekomendasi"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Rekomendasi"/>
 
     </LinearLayout>
-
 </RelativeLayout>

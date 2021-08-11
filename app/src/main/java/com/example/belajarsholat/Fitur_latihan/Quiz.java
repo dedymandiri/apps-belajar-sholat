@@ -15,10 +15,6 @@ import com.example.belajarsholat.Session.SessionManager;
 import com.example.belajarsholat.api.ApiClient;
 import com.example.belajarsholat.api.ApiInterface;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
 public class Quiz extends AppCompatActivity {
 
     TextView kuis;
@@ -78,18 +74,12 @@ public class Quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        if (soal != null){
-        soal = kuis.getText().toString();
-        }
-        tampil_soal(soal);
-
-
-    kuis = (TextView) findViewById(R.id.kuis);
-    rg = (RadioGroup) findViewById(R.id.pilihan);
-    PilihanA = (RadioButton) findViewById(R.id.pilihanA);
-    PilihanB = (RadioButton) findViewById(R.id.pilihanB);
-    PilihanC = (RadioButton) findViewById(R.id.pilihanC);
-    PilihanD = (RadioButton) findViewById(R.id.pilihanD);
+        kuis = (TextView) findViewById(R.id.kuis);
+        rg = (RadioGroup) findViewById(R.id.pilihan);
+        PilihanA = (RadioButton) findViewById(R.id.pilihanA);
+        PilihanB = (RadioButton) findViewById(R.id.pilihanB);
+        PilihanC = (RadioButton) findViewById(R.id.pilihanC);
+        PilihanD = (RadioButton) findViewById(R.id.pilihanD);
 
         kuis.setText(pertanyaan_kuis[nomor]);
         PilihanA.setText(pilihan_jawaban[0]);
@@ -98,67 +88,34 @@ public class Quiz extends AppCompatActivity {
         PilihanD.setText(pilihan_jawaban[3]);
 
         rg.check(0);
-    benar = 0;
-    salah = 0;
+        benar = 0;
+        salah = 0;
     }
 
     public void next(View view) {
         if (PilihanA.isChecked() || PilihanB.isChecked() || PilihanC.isChecked() || PilihanD.isChecked()) {
 
-            RadioButton jawaban_user = (RadioButton) findViewById(rg.getCheckedRadioButtonId());
+            RadioButton jawaban_user = (RadioButton) findViewById( rg.getCheckedRadioButtonId() );
             String ambil_jawaban_user = jawaban_user.getText().toString();
-            rg.check(0);
-            if (ambil_jawaban_user.equalsIgnoreCase(jawaban_benar[nomor])) benar++;
+            rg.check( 0 );
+            if (ambil_jawaban_user.equalsIgnoreCase( jawaban_benar[nomor] )) benar++;
             else salah++;
             nomor++;
             if (nomor < pertanyaan_kuis.length) {
-                kuis.setText(pertanyaan_kuis[nomor]);
-                PilihanA.setText(pilihan_jawaban[(nomor * 4)]);
-                PilihanB.setText(pilihan_jawaban[(nomor * 4) + 1]);
-                PilihanC.setText(pilihan_jawaban[(nomor * 4) + 2]);
-                PilihanD.setText(pilihan_jawaban[(nomor * 4) + 3]);
+                kuis.setText( pertanyaan_kuis[nomor] );
+                PilihanA.setText( pilihan_jawaban[(nomor * 4) + 0] );
+                PilihanB.setText( pilihan_jawaban[(nomor * 4) + 1] );
+                PilihanC.setText( pilihan_jawaban[(nomor * 4) + 2] );
+                PilihanD.setText( pilihan_jawaban[(nomor * 4) + 3] );
 
             } else {
-                hasil = benar * 10;
-                Intent selesai = new Intent(getApplicationContext(), Hasilquiz.class);
-                startActivity(selesai);
+                hasil = benar * 20;
+                Intent selesai = new Intent( getApplicationContext(), Hasilquiz.class );
+                startActivity( selesai );
             }
+        } else {
+            Toast.makeText( this, "Kamu Jawab Dulu", Toast.LENGTH_LONG ).show();
         }
-        else {
-            Toast.makeText(this,"Jawab dulu pertanyaanya!",Toast.LENGTH_LONG).show();
-        }
+
     }
-    private void tampil_soal(String sowal) {
-
-        apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        Call<Quiz> quizCall = apiInterface.soalResponse(sowal);
-
-        quizCall.enqueue(new Callback<Quiz>() {
-
-            @Override
-            public void onResponse(Call<Quiz> call, Response<Quiz> response) {
-                if (response.body() != null && response.isSuccessful()) {
-
-//                    sessionManager = new SessionManager( quiz.this);
-//                    loginData loginData = response.body().getData();
-//                    sessionManager.createLoginSession(loginData);
-//
-                    Toast.makeText(Quiz.this, (CharSequence) response.body(), Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(quiz.this, MainActivity2.class);
-//                    startActivity(intent);
-//                    finish();
-                } else {
-                    Toast.makeText( Quiz.this, (CharSequence) response.body(), Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Quiz> call, Throwable t) {
-
-                Toast.makeText( Quiz.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-
 }

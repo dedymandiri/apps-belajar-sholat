@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.Latihan_quiz.MainActivity;
+import com.example.belajarsholat.Fitur_latihan.Quiz;
 import com.example.belajarsholat.Login_register.LoginActivity;
 import com.example.belajarsholat.Menu_utama.Berwudhu;
 import com.example.belajarsholat.Menu_utama.Menu_Sholat;
@@ -33,14 +33,14 @@ public class MainActivity2 extends AppCompatActivity {
             moveToLogin();
         }
 
-        etUsername = findViewById( id.etMainUsername);
-        //etName = findViewById(R.id.etMainName);
+        //etUsername = findViewById( id.etMainUsername);
+        etName = findViewById(R.id.etMainName);
 
-        username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
-        //name = sessionManager.getUserDetail().get(SessionManager.NAME);
+        //username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
+        name = sessionManager.getUserDetail().get(SessionManager.NAME);
 
-        etUsername.setText(username);
-        //etName.setText(name);
+        //etUsername.setText(username);
+        etName.setText(name);
 
 
     }
@@ -70,9 +70,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-
     public void Latihan(View view) {
-        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        Intent intent = new Intent(MainActivity2.this, Quiz.class);
         startActivity(intent);
     }
 
@@ -88,6 +87,11 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void tentang_kami(View view) {
         Intent intent = new Intent(MainActivity2.this, Tentang_Kami.class);
+        startActivity(intent);
+    }
+
+    public void profile(View view) {
+        Intent intent = new Intent(MainActivity2.this, Profile.class);
         startActivity(intent);
     }
 }

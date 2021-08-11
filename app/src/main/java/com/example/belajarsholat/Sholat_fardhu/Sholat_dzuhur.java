@@ -1,14 +1,14 @@
 package com.example.belajarsholat.Sholat_fardhu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.belajarsholat.Tatacara_sholat.Cara_Sholatsubuh;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.belajarsholat.Listsurat_pendek.List_Surat_Pendek;
 import com.example.belajarsholat.R;
+import com.example.belajarsholat.Tatacara_sholat.Cara_sholatdzuhur;
 import com.example.belajarsholat.Video_sholat.video_sholatdzhuhur;
 
 public class Sholat_dzuhur extends AppCompatActivity {
@@ -25,7 +25,7 @@ public class Sholat_dzuhur extends AppCompatActivity {
     }
 
     public void carasholatdzuhur(View view) {
-        Intent intent = new Intent(Sholat_dzuhur.this, Cara_Sholatsubuh.class);
+        Intent intent = new Intent(Sholat_dzuhur.this, Cara_sholatdzuhur.class);
         startActivity(intent);
     }
 

@@ -7,7 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.belajarsholat.R;
-import com.example.belajarsholat.Tatacara_sholat.Cara_Sholatsubuh;
+import com.example.belajarsholat.Tatacara_sholat.Cara_berwudhu;
 import com.example.belajarsholat.Video_sholat.Video_Wudhu;
 
 public class Berwudhu extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class Berwudhu extends AppCompatActivity {
     }
 
     public void carasholatashar(View view) {
-        Intent intent = new Intent(Berwudhu.this, Cara_Sholatsubuh.class);
+        Intent intent = new Intent(Berwudhu.this, Cara_berwudhu.class);
         startActivity(intent);
     }
 }
