@@ -1,5 +1,7 @@
 package com.example.belajarsholat;
 
+import static com.example.belajarsholat.R.id;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.Fitur_latihan.quiz;
+import com.example.belajarsholat.Latihan_quiz.MainActivity;
 import com.example.belajarsholat.Login_register.LoginActivity;
 import com.example.belajarsholat.Menu_utama.Berwudhu;
 import com.example.belajarsholat.Menu_utama.Menu_Sholat;
@@ -31,11 +33,11 @@ public class MainActivity2 extends AppCompatActivity {
             moveToLogin();
         }
 
-        etUsername = findViewById(R.id.etMainUsername);
+        etUsername = findViewById( id.etMainUsername);
         //etName = findViewById(R.id.etMainName);
 
         username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
-        name = sessionManager.getUserDetail().get(SessionManager.NAME);
+        //name = sessionManager.getUserDetail().get(SessionManager.NAME);
 
         etUsername.setText(username);
         //etName.setText(name);
@@ -60,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.actinlogout:
+            case id.actinlogout:
                 sessionManager.logoutSession();
                 moveToLogin();
         }
@@ -70,7 +72,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void Latihan(View view) {
-        Intent intent = new Intent(MainActivity2.this, quiz.class);
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
         startActivity(intent);
     }
 

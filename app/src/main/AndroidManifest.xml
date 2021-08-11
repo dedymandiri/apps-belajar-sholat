@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.belajarsholat">
+    package="com.example.belajarsholat" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,14 +13,19 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-        <activity android:name=".Latihan_quiz.input_user"/>
-        <activity android:name=".Tatacara_sholat.Cara_sholatisya"/>
-        <activity android:name=".Tatacara_sholat.Cara_sholatmaghrib"/>
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Latihan_quiz.FileCache"
+            tools:ignore="Instantiatable,MissingClass" />
+        <activity
+            android:name=".Latihan_quiz.MainActivity" />
+        <activity android:name=".Latihan_quiz.input_user" />
+        <activity android:name=".Tatacara_sholat.Cara_sholatisya" />
+        <activity android:name=".Tatacara_sholat.Cara_sholatmaghrib" />
         <activity android:name=".Tatacara_sholat.Cara_sholatashar" />
         <activity android:name=".Tatacara_sholat.Cara_sholatdzuhur" />
-        <activity android:name=".splashscreen"
+        <activity
+            android:name=".splashscreen"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Login_register.RegisterActivity"
@@ -82,15 +87,15 @@
         <activity android:name=".Sholat_fardhu.Sholat_dzuhur" />
         <activity android:name=".Menu_utama.Menu_Sholat" />
         <activity android:name=".Fitur_latihan.Hasilquiz" />
-        <activity android:name=".Fitur_latihan.quiz" />
+        <activity android:name=".Fitur_latihan.Quiz" />
         <activity android:name=".Menu_utama.Berwudhu" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

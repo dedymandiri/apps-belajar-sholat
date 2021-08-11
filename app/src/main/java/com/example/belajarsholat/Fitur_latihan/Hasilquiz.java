@@ -19,13 +19,13 @@ public class Hasilquiz extends AppCompatActivity {
         TextView hasil = (TextView)findViewById(R.id.hasil);
         TextView nilai = (TextView)findViewById(R.id.nilai);
 
-        hasil.setText("Jawaban Yang Benar = "+ quiz.benar+"\nJawaban Yang Salah = "+quiz.salah);
-        nilai.setText(""+quiz.hasil);
+        hasil.setText("Jawaban Yang Benar = "+ Quiz.benar+"\nJawaban Yang Salah = "+ Quiz.salah);
+        nilai.setText(""+ Quiz.hasil);
     }
 
     public void ulangi(View view) {
         finish();
-        Intent a = new Intent(getApplicationContext(),quiz.class);
+        Intent a = new Intent(getApplicationContext(), Quiz.class);
         startActivity(a);
     }
 

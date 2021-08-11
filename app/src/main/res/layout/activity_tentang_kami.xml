@@ -10,13 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <me.biubiubiu.justifytext.library.JustifyTextView
-        android:id="@+id/tvJustified"
-        android:layout_width="359dp"
-        android:layout_height="match_parent"
-        android:textColor="@color/hitam"
-        android:layout_margin="15dp"
-        android:text="TENTANG KAMI\n\nAplikasi belajar sholat merupakan sebuah media pembelajaran dengan menggunakan
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/tvJustified"
+            android:layout_width="359dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="TENTANG KAMI\n\nAplikasi belajar sholat merupakan sebuah media pembelajaran dengan menggunakan
 digitalisasi tentang bagaimana tata cara sholat fardhu dengan baik dan benar, selain
 itu juga aplikasi ini menyajikan fitur latihan yang dapat mengukur terkait pemahaman
 para siswa tentang materi sholat fardhu, serta dilengkapi juga dengan fitur rekomendasi
@@ -44,11 +43,12 @@ Cara penggunaan menu latihan :\n
 \n3. Untuk bisa lanjut ke pertanyaan berikutnya anda harus memilih jawaban terlebih dulu baru bisa melanjutkan ke pertanyaan berikutnya.
 \n4. Setelah semua nya berhasil dijawab, anda dapat melihat hasil nilai/skor dari pertanyaan yang sudah anda jawab.
 \n5. Setelah anda mengetahui nilainya, anda juga bisa memilih menu rekomendasi untuk bisa melihat materi-materi yang perlu anda
-pelajari kembali berdasarkan jawaban yang salah dari pertanyaan."/>
-
+pelajari kembali berdasarkan jawaban yang salah dari pertanyaan.\n\n\n"
+            android:textColor="@color/hitam" />
 
 
     </ScrollView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
