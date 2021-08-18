@@ -1,4 +1,4 @@
-package com.example.belajarsholat;
+package com.example.belajarsholat.Menu_utama;
 
 import static com.example.belajarsholat.R.id;
 
@@ -14,10 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.belajarsholat.Fitur_latihan.Quiz;
 import com.example.belajarsholat.Login_register.LoginActivity;
-import com.example.belajarsholat.Menu_utama.Berwudhu;
-import com.example.belajarsholat.Menu_utama.Menu_Sholat;
-import com.example.belajarsholat.Menu_utama.Tentang_Kami;
+import com.example.belajarsholat.R;
 import com.example.belajarsholat.Session.SessionManager;
+import com.example.belajarsholat.aboutme;
 
 public class MainActivity2 extends AppCompatActivity {
     TextView etUsername, etName;
@@ -27,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView( R.layout.activity_main2);
         sessionManager = new SessionManager(MainActivity2.this);
         if(sessionManager.isLoggedIn() == false){
             moveToLogin();
@@ -86,7 +85,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void tentang_kami(View view) {
-        Intent intent = new Intent(MainActivity2.this, Tentang_Kami.class);
+        Intent intent = new Intent(MainActivity2.this, aboutme.class);
         startActivity(intent);
     }
 

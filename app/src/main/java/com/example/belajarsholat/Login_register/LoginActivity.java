@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.MainActivity2;
+import com.example.belajarsholat.Menu_utama.MainActivity2;
 import com.example.belajarsholat.R;
 import com.example.belajarsholat.api.ApiClient;
 import com.example.belajarsholat.api.ApiInterface;

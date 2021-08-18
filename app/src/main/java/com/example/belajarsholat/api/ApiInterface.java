@@ -1,8 +1,13 @@
 package com.example.belajarsholat.api;
 
-import com.example.belajarsholat.Fitur_latihan.Quiz;
+import com.example.belajarsholat.Model.aboutme.Aboutme;
+import com.example.belajarsholat.Model.latihanquiz.LatihanquizItem;
 import com.example.belajarsholat.Model.login.Login;
 import com.example.belajarsholat.Model.register.Register;
+import com.example.belajarsholat.Model.subuh.Subuh;
+import com.example.belajarsholat.Model.wudhu.Wudhu;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -29,13 +34,31 @@ public interface ApiInterface {
 
     );
 
-//    @FormUrlEncoded
-    @GET("phprestapi.php")
-    Call<Quiz> soalResponse(
-            @Field("soal") String soal
+    @GET("getsoal.php")
+    Call<List<LatihanquizItem>> ResponseTentang(
 
+    );
+
+    @GET("gettentang.php")
+    Call<Aboutme> Responsekami(
 
     );
 
 
+    @GET("getwudhu.php")
+    Call<Wudhu> Responsewudhu(
+
+    );
+
+
+    @GET("getsubuh.php")
+    Call<Subuh> Responsesubuh(
+
+    );
+
 }
+
+
+
+
+

@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.belajarsholat.Adapter.latihanquiz.quizpresenter;
 import com.example.belajarsholat.R;
 import com.example.belajarsholat.Session.SessionManager;
 import com.example.belajarsholat.api.ApiClient;
@@ -19,6 +20,7 @@ public class Quiz extends AppCompatActivity {
 
     TextView kuis;
     RadioGroup rg;
+    String status;
     RadioButton PilihanA, PilihanB, PilihanC, PilihanD;
     int nomor = 0;
     public static int hasil, benar, salah;
@@ -27,6 +29,7 @@ public class Quiz extends AppCompatActivity {
     String soal;
     ApiClient apiClient;
 
+    quizpresenter presenter;
     //pertanyaan
     String[] pertanyaan_kuis = new String[]{
             "1. Sebutkan berapa rakaat pada waktu shalat Shubuh?",
@@ -46,7 +49,7 @@ public class Quiz extends AppCompatActivity {
             "1 Rakaat", "2 Rakaat", "3 Rakaat", "4 Rakaat",
             "2 Rakaat", "3 Rakaat", "4 Rakaat", "5 Rakaat",
             "13 Rakaat", "14 Rakaat", "15 Rakaat", "16 Rakaat",
-            "Membiasakan hidup disiplin","Membiasakan hidup bersosial", "Hikmah membaca do’a iftitah, kejujuran dalam tindakan", "Sarana pembentukan kepribadian muslim",
+            "Membiasakan hidup disiplin", "Membiasakan hidup bersosial", "Hikmah membaca do’a iftitah, kejujuran dalam tindakan", "Sarana pembentukan kepribadian muslim",
             "4 Rakaat", "5 Rakaat", "6 Rakaat", "7 Rakaat",
             "1 Rakaat", "2 Rakaat", "3 Rakaat", "4 Rakaat",
             "Sunnah", "Wajib", "Makruh", "Mubah",
@@ -71,26 +74,34 @@ public class Quiz extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_quiz );
 
-        kuis = (TextView) findViewById(R.id.kuis);
-        rg = (RadioGroup) findViewById(R.id.pilihan);
-        PilihanA = (RadioButton) findViewById(R.id.pilihanA);
-        PilihanB = (RadioButton) findViewById(R.id.pilihanB);
-        PilihanC = (RadioButton) findViewById(R.id.pilihanC);
-        PilihanD = (RadioButton) findViewById(R.id.pilihanD);
+//        getDataLatihan();
 
-        kuis.setText(pertanyaan_kuis[nomor]);
-        PilihanA.setText(pilihan_jawaban[0]);
-        PilihanB.setText(pilihan_jawaban[1]);
-        PilihanC.setText(pilihan_jawaban[2]);
-        PilihanD.setText(pilihan_jawaban[3]);
+        kuis = (TextView) findViewById( R.id.kuis );
+        rg = (RadioGroup) findViewById( R.id.pilihan );
+        PilihanA = (RadioButton) findViewById( R.id.pilihanA );
+        PilihanB = (RadioButton) findViewById( R.id.pilihanB );
+        PilihanC = (RadioButton) findViewById( R.id.pilihanC );
+        PilihanD = (RadioButton) findViewById( R.id.pilihanD );
 
-        rg.check(0);
+        kuis.setText( pertanyaan_kuis[nomor] );
+        PilihanA.setText( pilihan_jawaban[0] );
+        PilihanB.setText( pilihan_jawaban[1] );
+        PilihanC.setText( pilihan_jawaban[2] );
+        PilihanD.setText( pilihan_jawaban[3] );
+
+        rg.check( 0 );
         benar = 0;
         salah = 0;
     }
+
+//    private void getDataLatihan() {
+////        pertanyaan_kuis = new String[]{};
+////        pilihan_jawaban = new String[]{};
+////        jawaban_benar = new String[]{};
+//    }
 
     public void next(View view) {
         if (PilihanA.isChecked() || PilihanB.isChecked() || PilihanC.isChecked() || PilihanD.isChecked()) {
@@ -110,12 +121,24 @@ public class Quiz extends AppCompatActivity {
 
             } else {
                 hasil = benar * 20;
-                Intent selesai = new Intent( getApplicationContext(), Hasilquiz.class );
-                startActivity( selesai );
-            }
-        } else {
-            Toast.makeText( this, "Kamu Jawab Dulu", Toast.LENGTH_LONG ).show();
-        }
+                String status;
+                if (hasil >= 75) {
+                    status = "kurang Baik";
+                } else if (hasil >= 85) {
+                    status = "Baik";
+                } else if (hasil >= 100) {
+                    status = "Sangat Baik";
 
+                    Intent selesai = new Intent( getApplicationContext(), Hasilquiz.class );
+                    selesai.putExtra( "status", status );
+                    startActivity( selesai );
+
+                } else {
+                    Toast.makeText( this, "Kamu jawab dulu ya! ", Toast.LENGTH_LONG ).show();
+                }
+
+            }
+
+        }
     }
 }

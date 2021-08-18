@@ -2,4 +2,6 @@
 <resources>
     <item name="etPassword" type="id" />
     <item name="textViewWaktu" type="id" />
+    <item name="judul" type="id" />
+    <item name="deskripsi" type="id" />
 </resources>

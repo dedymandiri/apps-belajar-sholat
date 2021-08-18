@@ -15,13 +15,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".aboutme"
+            android:exported="true" />
+        <activity
+            android:name=".latihanquiz"
+            android:exported="true" />
+        <activity
             android:name=".Fitur_latihan.Periksa"
             android:exported="true" />
         <activity
             android:name=".Fitur_rekomendasi.Rekomendasi"
             android:exported="true" />
         <activity
-            android:name=".Profile"
+            android:name=".Menu_utama.Profile"
             android:exported="true" />
         <activity
             android:name=".Tatacara_sholat.Cara_berwudhu"
@@ -91,7 +97,6 @@
         <activity android:name=".Tatacara_sholat.Cara_Sholatsubuh" />
         <activity android:name=".Listsurat_pendek.List_Surat_Pendek" />
         <activity android:name=".Video_sholat.video_sholatsubuh" />
-        <activity android:name=".Menu_utama.Tentang_Kami" />
         <activity android:name=".Sholat_fardhu.Sholat_Isya" />
         <activity android:name=".Sholat_fardhu.Sholat_Maghrib" />
         <activity android:name=".Sholat_fardhu.Sholat_Ashar" />
@@ -101,7 +106,7 @@
         <activity android:name=".Fitur_latihan.Quiz" />
         <activity android:name=".Menu_utama.Berwudhu" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Menu_utama.MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

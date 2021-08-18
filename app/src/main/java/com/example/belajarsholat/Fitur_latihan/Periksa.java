@@ -6,8 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.MainActivity2;
-import com.example.belajarsholat.Menu_utama.Menu_Sholat;
 import com.example.belajarsholat.R;
 
 public class Periksa extends AppCompatActivity {

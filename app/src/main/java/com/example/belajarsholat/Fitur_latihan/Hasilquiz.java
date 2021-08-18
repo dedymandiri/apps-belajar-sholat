@@ -20,8 +20,17 @@ public class Hasilquiz extends AppCompatActivity {
         TextView hasil = (TextView)findViewById(R.id.hasil);
         TextView nilai = (TextView)findViewById(R.id.nilai);
 
-        hasil.setText("Jawaban Yang Benar = "+ Quiz.benar+"\nJawaban Yang Salah = "+ Quiz.salah);
-        nilai.setText(""+ Quiz.hasil);
+        Intent i = new getIntent();
+        String status = i.getStringExtra("status");
+        nilai.setText(status);
+
+         hasil.setText("Jawaban Yang Benar = "+ Quiz.benar+"\nJawaban Yang Salah = "+ Quiz.salah+"\nKategori = "+status);
+         nilai.setText(""+ Quiz.hasil);
+
+         hasil.setText("Jawaban Benar :"+Quiz.benar+"\nJawaban Salah :"+Quiz.salah);
+         nilai.setText(""+Quiz.hasil);
+
+
     }
 
     public void ulangi(View view) {
@@ -38,5 +47,9 @@ public class Hasilquiz extends AppCompatActivity {
     public void periksa(View view) {
         Intent intent = new Intent( Hasilquiz.this, Periksa.class);
         startActivity(intent);
+    }
+
+    private class getIntent extends Intent {
+
     }
 }

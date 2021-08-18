@@ -1,8 +1,8 @@
-package com.example.belajarsholat.Model;
+package com.example.belajarsholat.Model.latihanquiz;
 
 import com.google.gson.annotations.SerializedName;
 
-public class DataItem{
+public class LatihanquizItem{
 
 	@SerializedName("a")
 	private String A;
@@ -21,9 +21,6 @@ public class DataItem{
 
 	@SerializedName("id")
 	private String id;
-
-	@SerializedName("gambar")
-	private String gambar;
 
 	public void setA(String A){
 		this.A = A;
@@ -71,13 +68,5 @@ public class DataItem{
 
 	public String getId(){
 		return id;
-	}
-
-	public void setGambar(String gambar){
-		this.gambar = gambar;
-	}
-
-	public String getGambar(){
-		return gambar;
 	}
 }

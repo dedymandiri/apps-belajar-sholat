@@ -1,25 +1,24 @@
-package com.example.belajarsholat.Model;
+package com.example.belajarsholat.Model.aboutme;
 
-import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-public class Soal{
+public class Aboutme{
 
 	@SerializedName("data")
-	private List<DataItem> data;
+	private AboutData aboutData;
 
 	@SerializedName("message")
 	private String message;
 
 	@SerializedName("status")
-	private int status;
+	private boolean status;
 
-	public void setData(List<DataItem> data){
-		this.data = data;
+	public void setData(AboutData aboutData){
+		this.aboutData = aboutData;
 	}
 
-	public List<DataItem> getData(){
-		return data;
+	public AboutData getData(){
+		return aboutData;
 	}
 
 	public void setMessage(String message){
@@ -30,11 +29,11 @@ public class Soal{
 		return message;
 	}
 
-	public void setStatus(int status){
+	public void setStatus(boolean status){
 		this.status = status;
 	}
 
-	public int getStatus(){
+	public boolean isStatus(){
 		return status;
 	}
 }

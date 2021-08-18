@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".Menu_utama.Profile">
 
     <View
         android:id="@+id/view"
@@ -15,6 +15,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Profil"
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"
