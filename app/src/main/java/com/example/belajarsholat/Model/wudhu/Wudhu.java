@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class Wudhu{
 
 	@SerializedName("data")
-	private WudhuData wudhuData;
+	private WudhuData data;
 
 	@SerializedName("message")
 	private String message;
@@ -13,12 +13,12 @@ public class Wudhu{
 	@SerializedName("status")
 	private boolean status;
 
-	public void setData(WudhuData wudhuData){
-		this.wudhuData = wudhuData;
+	public void setData(WudhuData data){
+		this.data = data;
 	}
 
 	public WudhuData getData(){
-		return wudhuData;
+		return data;
 	}
 
 	public void setMessage(String message){

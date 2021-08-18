@@ -1,8 +1,12 @@
 package com.example.belajarsholat.api;
 
 import com.example.belajarsholat.Model.aboutme.Aboutme;
+import com.example.belajarsholat.Model.ashar.Ashar;
+import com.example.belajarsholat.Model.dzuhur.Dzuhur;
+import com.example.belajarsholat.Model.isya.Isya;
 import com.example.belajarsholat.Model.latihanquiz.LatihanquizItem;
 import com.example.belajarsholat.Model.login.Login;
+import com.example.belajarsholat.Model.maghrib.Maghrib;
 import com.example.belajarsholat.Model.register.Register;
 import com.example.belajarsholat.Model.subuh.Subuh;
 import com.example.belajarsholat.Model.wudhu.Wudhu;
@@ -53,6 +57,26 @@ public interface ApiInterface {
 
     @GET("getsubuh.php")
     Call<Subuh> Responsesubuh(
+
+    );
+
+    @GET("getdzuhur.php")
+    Call<Dzuhur> Responsedzuhur(
+
+    );
+
+    @GET("getashar.php")
+    Call<Ashar> Responseashar(
+
+    );
+
+    @GET("getmaghrib.php")
+    Call<Maghrib> Responsemaghrib(
+
+    );
+
+    @GET("getisya.php")
+    Call<Isya> Responseisya(
 
     );
 

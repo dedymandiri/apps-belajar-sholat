@@ -55,8 +55,8 @@ public class Berwudhu extends AppCompatActivity {
             public void onResponse(Call<Wudhu> call, Response<Wudhu> response) {
                 if (response.body() != null && response.isSuccessful() && response.body().isStatus()) {
                     sessionManager = new SessionManager( Berwudhu.this );
-                    WudhuData WudhuData = response.body().getData();
-                    sessionManager.createwudhuSession( WudhuData );
+                    WudhuData wudhuData = response.body().getData();
+                    sessionManager.createwudhuSession( wudhuData );
                 } else {
                     Toast.makeText( Berwudhu.this, response.body().getMessage(), Toast.LENGTH_SHORT ).show();
                 }

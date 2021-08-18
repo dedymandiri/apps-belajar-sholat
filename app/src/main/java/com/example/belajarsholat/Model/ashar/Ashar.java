@@ -1,11 +1,11 @@
-package com.example.belajarsholat.Model.subuh;
+package com.example.belajarsholat.Model.ashar;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Subuh{
+public class Ashar{
 
 	@SerializedName("data")
-	private SubuhData data;
+	private AsharData asharData;
 
 	@SerializedName("message")
 	private String message;
@@ -13,12 +13,12 @@ public class Subuh{
 	@SerializedName("status")
 	private boolean status;
 
-	public void setData(SubuhData data){
-		this.data = data;
+	public void setData(AsharData asharData){
+		this.asharData = asharData;
 	}
 
-	public SubuhData getData(){
-		return data;
+	public AsharData getData(){
+		return asharData;
 	}
 
 	public void setMessage(String message){

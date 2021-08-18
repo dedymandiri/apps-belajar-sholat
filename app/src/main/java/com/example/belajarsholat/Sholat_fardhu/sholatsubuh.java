@@ -56,8 +56,8 @@ public class sholatsubuh extends AppCompatActivity {
                 if (response.body() != null && response.isSuccessful() && response.body().isStatus()) {
 
                     sessionManager = new SessionManager( sholatsubuh.this );
-                    SubuhData aboutData = response.body().getData();
-                    sessionManager.createsubuhSession( aboutData );
+                    SubuhData subuhData = response.body().getData();
+                    sessionManager.createsubuhSession( subuhData );
                 } else {
                     Toast.makeText( sholatsubuh.this, response.body().getMessage(), Toast.LENGTH_SHORT ).show();
                 }

@@ -26,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_main2);
+        setContentView(R.layout.activity_main2);
         sessionManager = new SessionManager(MainActivity2.this);
         if(sessionManager.isLoggedIn() == false){
             moveToLogin();
@@ -92,5 +92,8 @@ public class MainActivity2 extends AppCompatActivity {
     public void profile(View view) {
         Intent intent = new Intent(MainActivity2.this, Profile.class);
         startActivity(intent);
+    }
+
+    private class latihanquiz {
     }
 }

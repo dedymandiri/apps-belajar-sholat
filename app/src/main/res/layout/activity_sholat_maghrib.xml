@@ -6,46 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".Sholat_fardhu.Sholat_Maghrib">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/oranye"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtdasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sholat Maghrib"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdasboard"
+            android:layout_marginTop="6dp"
+            android:text="Materi sholat maghrib"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="100dp">
 
         <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/deskripsi_maghrib"
             android:layout_width="359dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:textColor="@color/hitam"
-            android:text="SHOLAT MAGHRIB\n\nSholat maghrib merupakan salah satu sholat lima waktu yang wajib dikerjakan tiap Muslim. Sholat ini terdiri atas tiga rakaat. Sholat maghrib ini waktunya tergolong pendek yakni dimulai dari terbenamnya matahari sampai hilangnya mega merah.
-            \n\nPelaksanaan sholat fardhu termasuk sholat maghrib ini sudah ditentukan waktunya sebagaimana termaktub dalam Alquran.
-             \n\nMaka apabila kamu telah menyelesaikan salat(mu), ingatlah Allah di waktu berdiri, di waktu duduk dan di waktu berbaring. Kemudian apabila kamu telah merasa aman, maka dirikanlah shalat itu (sebagaimana biasa). Sungguh, salat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman. (QS. An Nisa: 103)
-            \n\nNiat Sholat Maghrib
-            \n\nSebelum melaksanakan sholat maghrib Muslim harus membaca niat. berikut bacaan niat sholat maghrib berjamaah:
-             \n\nUshalli fardhol maghribi tsalaatsa raka'aatin mustaqbilal qiblati adaa,an makmuman/imaman lillaahi ta'aala.
-            \n\nArtinya :\nSaya melakukan shalat fardhu maghrib sebanyak tiga rakaat dengan menghadap kiblat, pada waktunya (menjadi makmum/imam) karena Allah Ta’ala.
-            \n\nKeutamaan sholat maghrib
-            \n\nDi waktu Maghrib merupakan waktu di mana Nabi Adam ‘Alaihi sallam diterima tobatnya oleh Allah Subhanahu wa ta’ala. Adapun keutamaan dari melaksanakan sholat Maghrib berjamaah yaitu sebagai berikut:
-            \n\n1. Mendapatkan pahala yang berlimpah
-            \n\nSholat yang dilakukan secara berjamaah jauh lebih besar pahalanya dibandingkan dengan sholat sendiri atau munfarid. Dalam sebuah hadits diriwayatkan bahwa:
-            \n\nصَلَاةُ الْجَمَاعَةِ تَفْضُلُ صَلَاةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً
-            \n\nArtinya :\n “Sholat berjamaah lebih besar dibandingkan sholat sendirian dengan (mendapatkan) 27 derajat.” (HR. Al Bukhari)
-            \n\n2. Mencegah perbuatan yang keji dan mungkar
-            \n\nMelaksanakan sholat Maghrib secara berjamaah dapat mencegah perbuatan yang keji dan mungkar. Hal ini tertuang pada ayat Al Quran yaitu pada surat Al Ankabut ayat ke-45, Allah Subhanahu wa ta’ala berfirman,
-            \n\nاتْلُ مَا أُوحِيَ إِلَيْكَ مِنَ الْكِتَابِ وَأَقِمِ الصَّلَاةَ ۖ إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ ۗ وَلَذِكْرُ اللَّهِ أَكْبَرُ ۗ وَاللَّهُ يَعْلَمُ مَا تَصْنَعُونَ
-            \n\nArtinya :\n “Bacalah apa yang telah diwahyukan kepadamu, yaitu Al Kitab (Al Quran) dan dirikanlah sholat. Sesungguhnya sholat itu mencegah dari (perbuatan – perbuatan) keji dan mungkar. Dan sesungguhnya mengingat Allah (sholat) adalah lebih besar (keutamaannya dari ibadah – ibadah yang lain). Dan Allah mengetahui apa yang kamu kerjakan. (QS. Al Ankabut ayat 45)
-            \n\n3. Berada di surga
-            \n\nMelaksanakan sholat Maghrib secara berjamaah dapat membawa kita ke surganya Allah Subhanahu wa ta’ala. Hal ini tertuang pada ayat Al Quran yaitu pada surat Al Ma’arij ayat ke -34 dan 35, Allah Subhanahu wa ta’ala berfirman,
-            \n\nوَالَّذِينَ هُمْ عَلَىٰ صَلَاتِهِمْ يُحَافِظُونَ. أُولَٰئِكَ فِي جَنَّاتٍ مُكْرَمُونَ
-            \n\nArtinya :\n “Dan orang – orang yang memelihara sholatnya. Mereka itu (kekal) di surga lagi dimuliakan.” (QS. Al Ma’arij ayat 34-35)
-            \n\n4. Dikabulkannya sesuatu
-            \n\nDengan melaksanakan sholat Maghrib dengan ikhlas dan khusyuk, maka akan dikabulkan apa – apa yang diinginkan oleh Allah Subhanahu wa ta’ala.
-            \n\n5. Sebagai penolong dari marabahaya
-            \n\nSholat dapat membantu kita dalam marabahaya. Allah Subhanahu wa ta’ala akan melindungi kita. Karena sholat sebagai penolong bagi kita. Allah Subhanahu wa ta’ala berfirman,
-            \n\nوَٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى ٱلْخَٰشِعِينَ
-            \n\nArtinya :\n “Jadikanlah sabar dan shalat sebagai penolongmu. Dan sesungguhnya yang demikian itu sungguh berat, kecuali bagi orang-orang yang khusyuk.\n” (QS. Al Baqarah ayat 45)
-            \n\n\n\n\n\n\n
-            "/>
+            android:text="Deskripsikscnjskcnkjsbcjkbsjbsdjkbjsdbckjscjbdsjkjbsdjj"/>
+
     </ScrollView>
 
     <LinearLayout
@@ -86,6 +92,5 @@
             android:text="Video"/>
 
     </LinearLayout>
-
 
 </RelativeLayout>

@@ -6,35 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Sholat_fardhu.Sholat_dzuhur">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/oranye"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtdasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sholat Dzuhur"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdasboard"
+            android:layout_marginTop="6dp"
+            android:text="Materi sholat dzuhur"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:foregroundGravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="100dp">
 
         <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/deskripsi_dzuhur"
             android:layout_width="359dp"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="16dp"
             android:textColor="@color/hitam"
-            android:text="SHOLAT DZUHUR\n\nSalat yang biasa dieja dengan ucapan dhuhur ini dikerjakan pada waktu siang hari ketika matahari tepat berada di atas kepala kita, ketika siang sudah berada di puncaknya dan menjadi ibadah kedua setelah sholat subuh.
-            \n\nShalat dzuhur juga menjadi salah satu dari 5 sholat yang wajib dikerjakan oleh muslim dan muslimah baik yang sedang beraktifitas maupun tidak. Bila kamu sedang beraktifitas, segeralah istirahat untuk melaksanakan sholat subuh secara sendiri maupun berjamaah di masjid atau mushala.
-            \n\nSalat dzuhur dikerjakan sebanyak 4 rakaat dengan dua rakaat awal untuk membaca dua surat dan dua rakaat akhir untuk membaca satu surat dalam al-Quran. Shalat dzuhur diakhiri dengan melakukan salam pada rakaat keempat.
-            \n\nNiat Shalat Dzuhur
-            \n\nUshollii fardhodl dhuhri arba’a raka’aatim mustaqbilal qiblati adaa-an ma’muuman lillaahi ta’aala.
-            \n\nArtinya:\n“Aku berniat shalat fardu Dhuhur empat raka’at menghadap kiblat sebagai ma’mum karena Allah \nTa’ala.”
-            \n\nWaktu Pelaksanaan
-            \n\nWaktu untuk melaksanakan shalat dzuhur adalah dimulai ketika matahari mulai condong ke arah barat pada siang hari. Kemudian batas waktu sholat dzuhur diakhiri ketika masuk waktu sholat Ashar.
-            \n\nAdapun di Indonesia, sholat zuhur dimulai sekitar pukul 11.50 WIB, WITA dan WIT. Sholat dzuhur berakhir ketika memasuki waktu ashar sekitar pukul 15.10 WIB, WITA dan WIT.
-            \n\nKeutamaan Shalat Dzuhur
-            \n\n1. Sholat dhuhur yaitu waktu dimana pintu langit \nterbuka
-            \n\nHal ini disebutkan didalam suatu hadist bahwasannya Nabi Muhammad SAW lebih senang melaksanakan amalan-amalan saleh pada saat waktu dhuhur sebab pada saat waktu dhuhur itu dimana pintu langit sedang dibuka. Misalnya amalan tersebut yaitu sholat qobliah dan ba’diyyah (yaitu melaksanakan sholat sebelum dan sesudah ) sholat dhuhur.
-            \n\n2. Dikharamkan dari api neraka jahanam
-            \n\nDisebutkan didalam suatu hadist yang menyebutkan bahwa rasulullah pernah menjelaskan bahwasannya sholat dhuhur merupakan waktu dimana api neraka dinyalakan bagi orang yang melaksanakan sholat dhuhur maka akan dikharamkan atas api yang menyala-nyala di neraka pada saat hari kiamat.
-            \n\n3. Yang selanjutkan manfaat dalam ilmu medis
-            \n\nPada saat melaksanakan sholat dhuhur dimana aktivitas seseorang manusia sedang memuncak dan sudah terasa begitu lelah, nah waktu dhuhur ini digunakan yang paling tepat untuk merelaksasi atau untuk mengurang rasa kelelahan dan juga penat yang sudah dilaksanakannya.
-            \n\n\n\n\n\n"/>
+            android:text="Deskripsikscnjskcnkjsbcjkbsjbsdjkbjsdbckjscjbdsjkjbsdjj"/>
 
     </ScrollView>
 
@@ -76,6 +92,5 @@
             android:text="Video"/>
 
     </LinearLayout>
-
 
 </RelativeLayout>

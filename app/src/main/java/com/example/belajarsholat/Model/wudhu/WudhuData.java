@@ -4,36 +4,36 @@ import com.google.gson.annotations.SerializedName;
 
 public class WudhuData {
 
-	@SerializedName("id")
-	private String id;
+	@SerializedName("id_wudhu")
+	private String idWudhu;
 
-	@SerializedName("deskripsi")
-	private String deskripsi;
+	@SerializedName("deskripsi_wudhu")
+	private String deskripsiWudhu;
 
-	@SerializedName("judul")
-	private String judul;
+	@SerializedName("judul_wudhu")
+	private String judulWudhu;
 
-	public void setId(String id){
-		this.id = id;
+	public void setIdWudhu(String idWudhu){
+		this.idWudhu = idWudhu;
 	}
 
-	public String getId(){
-		return id;
+	public String getIdWudhu(){
+		return idWudhu;
 	}
 
-	public void setDeskripsi(String deskripsi){
-		this.deskripsi = deskripsi;
+	public void setDeskripsiWudhu(String deskripsiWudhu){
+		this.deskripsiWudhu = deskripsiWudhu;
 	}
 
-	public String getDeskripsi(){
-		return deskripsi;
+	public String getDeskripsiWudhu(){
+		return deskripsiWudhu;
 	}
 
-	public void setJudul(String judul){
-		this.judul = judul;
+	public void setJudulWudhu(String judulWudhu){
+		this.judulWudhu = judulWudhu;
 	}
 
-	public String getJudul(){
-		return judul;
+	public String getJudulWudhu(){
+		return judulWudhu;
 	}
 }

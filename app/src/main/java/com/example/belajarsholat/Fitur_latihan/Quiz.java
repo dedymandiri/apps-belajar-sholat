@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -121,22 +120,9 @@ public class Quiz extends AppCompatActivity {
 
             } else {
                 hasil = benar * 20;
-                String status;
-                if (hasil >= 75) {
-                    status = "kurang Baik";
-                } else if (hasil >= 85) {
-                    status = "Baik";
-                } else if (hasil >= 100) {
-                    status = "Sangat Baik";
-
-                    Intent selesai = new Intent( getApplicationContext(), Hasilquiz.class );
-                    selesai.putExtra( "status", status );
-                    startActivity( selesai );
-
-                } else {
-                    Toast.makeText( this, "Kamu jawab dulu ya! ", Toast.LENGTH_LONG ).show();
-                }
-
+                Intent intent = new Intent(Quiz.this, Hasilquiz.class);
+                intent.putExtra("status", status);
+                startActivity(intent);
             }
 
         }

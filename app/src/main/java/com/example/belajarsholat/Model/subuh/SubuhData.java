@@ -4,14 +4,22 @@ import com.google.gson.annotations.SerializedName;
 
 public class SubuhData {
 
+	@SerializedName("judul_subuh")
+	private String judulSubuh;
+
 	@SerializedName("id")
 	private String id;
 
-	@SerializedName("deskripsisubuh")
-	private String deskripsi;
+	@SerializedName("deskripsi_subuh")
+	private String deskripsiSubuh;
 
-	@SerializedName("judulsubuh")
-	private String judul;
+	public void setJudulSubuh(String judulSubuh){
+		this.judulSubuh = judulSubuh;
+	}
+
+	public String getJudulSubuh(){
+		return judulSubuh;
+	}
 
 	public void setId(String id){
 		this.id = id;
@@ -21,19 +29,11 @@ public class SubuhData {
 		return id;
 	}
 
-	public void setDeskripsi(String deskripsi){
-		this.deskripsi = deskripsi;
+	public void setDeskripsiSubuh(String deskripsiSubuh){
+		this.deskripsiSubuh = deskripsiSubuh;
 	}
 
-	public String getDeskripsi(){
-		return deskripsi;
-	}
-
-	public void setJudul(String judul){
-		this.judul = judul;
-	}
-
-	public String getJudul(){
-		return judul;
+	public String getDeskripsiSubuh(){
+		return deskripsiSubuh;
 	}
 }

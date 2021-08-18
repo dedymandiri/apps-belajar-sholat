@@ -7,10 +7,10 @@ public class AboutData {
 	@SerializedName("id")
 	private String id;
 
-	@SerializedName("deskripsiabout")
+	@SerializedName("deskripsi_tentang")
 	private String deskripsi;
 
-	@SerializedName("judulabout")
+	@SerializedName("judul_tentang")
 	private String judul;
 
 	public void setId(String id){

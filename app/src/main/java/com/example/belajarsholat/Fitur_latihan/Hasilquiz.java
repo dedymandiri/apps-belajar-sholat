@@ -20,17 +20,21 @@ public class Hasilquiz extends AppCompatActivity {
         TextView hasil = (TextView)findViewById(R.id.hasil);
         TextView nilai = (TextView)findViewById(R.id.nilai);
 
-        Intent i = new getIntent();
-        String status = i.getStringExtra("status");
-        nilai.setText(status);
+        int hasilAngka = Quiz.hasil;
+        String status = "";
+        if(hasilAngka <= 70) {
+            status = "Kurang Baik";
+        }else if(hasilAngka <= 85) {
+            status = "Baik";
+        }else {
+            status = "Sangat Baik";
+        }
 
-         hasil.setText("Jawaban Yang Benar = "+ Quiz.benar+"\nJawaban Yang Salah = "+ Quiz.salah+"\nKategori = "+status);
-         nilai.setText(""+ Quiz.hasil);
+        hasil.setText("Jawaban Yang Benar = "+ Quiz.benar+"\nJawaban Yang Salah = "+ Quiz.salah+"\n\n\nKategori = "+status);
+        nilai.setText(""+ Quiz.hasil);
 
-         hasil.setText("Jawaban Benar :"+Quiz.benar+"\nJawaban Salah :"+Quiz.salah);
-         nilai.setText(""+Quiz.hasil);
-
-
+//        hasil.setText("Jawaban Benar :"+Quiz.benar+"\nJawaban Salah :"+Quiz.salah);
+//        nilai.setText(""+Quiz.hasil);
     }
 
     public void ulangi(View view) {
