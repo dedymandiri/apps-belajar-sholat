@@ -15,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".aboutme"
+            android:name=".Profil.Ubahprofile"
+            android:exported="true" />
+        <activity
+            android:name=".Menu_utama.aboutme"
             android:exported="true" />
         <activity
             android:name=".latihanquiz"
@@ -27,7 +30,7 @@
             android:name=".Fitur_rekomendasi.Rekomendasi"
             android:exported="true" />
         <activity
-            android:name=".Menu_utama.Profile"
+            android:name=".Profil.Profile"
             android:exported="true" />
         <activity
             android:name=".Tatacara_sholat.Cara_berwudhu"
@@ -106,7 +109,7 @@
         <activity android:name=".Fitur_latihan.Quiz" />
         <activity android:name=".Menu_utama.Berwudhu" />
         <activity
-            android:name=".Menu_utama.MainActivity2"
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

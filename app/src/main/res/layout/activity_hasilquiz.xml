@@ -6,52 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".Fitur_latihan.Hasilquiz">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:gravity="center">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/hitam"
-        android:textSize="25dp"
-        android:text="NILAI LATIHAN"/>
-    </LinearLayout>
+        android:layout_height="99dp"
+        android:background="@color/oranye"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtdasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nilai Latihan"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdasboard"
+            android:layout_marginTop="6dp"
+            android:text="Hasil nilai latihan pilihan ganda"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dari 10 Soal"
+        android:layout_marginTop="150dp"
         android:gravity="center"
-        android:textColor="@color/hitam"
-        android:textStyle="bold"
-        android:layout_marginTop="120dp"/>
+        android:text="Dari 10 Soal"
+        android:textSize="17dp"
+        android:textColor="@color/hitam"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/hasil"
         android:textColor="@color/hitam"
-        android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
+        android:textSize="17dp"
         android:text="Hasil Jawaban Kamu ="/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:text="Selamat kamu mendapatkan nilai :"
+        android:textColor="@color/hitam"
+        android:textSize="17dp" />
+
+    <TextView
         android:id="@+id/nilai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:layout_marginTop="250dp"
+        android:text="100"
         android:textColor="@color/hitam"
-        android:textSize="60sp"
-        android:text="100"/>
-
-
+        android:textSize="50sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,15 +95,6 @@
             android:layout_weight="1"
             />
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:onClick="periksa"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/putih"
-            android:layout_weight="1"
-            android:layout_marginLeft="5dp"
-            android:text="Periksa"/>
 
         <Button
             android:layout_width="100dp"

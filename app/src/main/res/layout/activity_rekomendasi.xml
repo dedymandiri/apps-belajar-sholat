@@ -6,35 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".Fitur_rekomendasi.Rekomendasi">
 
-    <View
-        android:id="@+id/view"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:background="@drawable/custom_rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="99dp"
+        android:background="@color/oranye"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtdasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi Materi"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdasboard"
+            android:layout_marginTop="6dp"
+            android:text="Hasil rekomendasi materi dari latihan"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:justificationMode="inter_word"
-        android:text="Rekomendasi Materi"
-        android:textColor="@color/putih"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <me.biubiubiu.justifytext.library.JustifyTextView
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="160dp"
-        android:text="Dibawah ini hasil rekomendasi materi berdasarkan jawaban yang salah dari hasil latihan untuk dipelajari kembali agar lebih paham supaya dalam menjawab soal latihan dapat tepat dan benar."
+        android:layout_marginTop="115dp"
+        android:text="Dibawah ini hasil rekomendasi materi berdasarkan jawaban yang salah dari hasil latihana siswa adalah antara lain :"
         android:textColor="@color/hitam"
         android:textSize="18dp" />
 
@@ -42,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="200dp"
         android:orientation="vertical">
 
         <TextView
@@ -52,9 +62,9 @@
             android:layout_marginTop="12dp"
             android:layout_marginRight="10dp"
             android:text="Sholat subuh"
-            android:textStyle="bold"
             android:textColor="@color/hitam"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -63,9 +73,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
             android:text="Sholat dzuhur"
-            android:textStyle="bold"
             android:textColor="@color/hitam"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -73,10 +83,10 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:textStyle="bold"
             android:text="Sholat ashar"
             android:textColor="@color/hitam"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

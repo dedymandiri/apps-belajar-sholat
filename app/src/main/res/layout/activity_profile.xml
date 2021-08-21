@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu_utama.Profile">
+    tools:context=".Profil.Profile">
 
     <View
         android:id="@+id/view"
@@ -39,8 +39,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="225dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="225dp"
         android:orientation="vertical">
 
         <TextView
@@ -92,31 +92,49 @@
             android:text="DediMaulana"
             android:textColor="@color/hitam" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Password :"
-            android:textColor="@color/hitam"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="Password :"-->
+<!--            android:textColor="@color/hitam"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
 
-        <TextView
-            android:id="@+id/etRegisterPassword"
-            style="@style/styleEditText"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawablePadding="15dp"
-            android:paddingLeft="20dp"
-            android:text="dedi123"
-            android:textColor="@color/hitam" />
+<!--        <TextView-->
+<!--            android:id="@+id/etRegisterPassword"-->
+<!--            style="@style/styleEditText"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_lock_24"-->
+<!--            android:drawablePadding="15dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:text="dedi123"-->
+<!--            android:textColor="@color/hitam" />-->
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="ubahdata"
+            android:text="ubah data"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

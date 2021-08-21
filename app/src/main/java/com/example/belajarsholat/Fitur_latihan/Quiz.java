@@ -97,9 +97,9 @@ public class Quiz extends AppCompatActivity {
     }
 
 //    private void getDataLatihan() {
-////        pertanyaan_kuis = new String[]{};
-////        pilihan_jawaban = new String[]{};
-////        jawaban_benar = new String[]{};
+//        pertanyaan_kuis = new String[]{};
+//        pilihan_jawaban = new String[]{};
+//        jawaban_benar = new String[]{};
 //    }
 
     public void next(View view) {
@@ -119,7 +119,7 @@ public class Quiz extends AppCompatActivity {
                 PilihanD.setText( pilihan_jawaban[(nomor * 4) + 3] );
 
             } else {
-                hasil = benar * 20;
+                hasil = benar * 10;
                 Intent intent = new Intent(Quiz.this, Hasilquiz.class);
                 intent.putExtra("status", status);
                 startActivity(intent);

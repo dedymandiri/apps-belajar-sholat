@@ -7,6 +7,7 @@ import com.example.belajarsholat.Model.isya.Isya;
 import com.example.belajarsholat.Model.latihanquiz.LatihanquizItem;
 import com.example.belajarsholat.Model.login.Login;
 import com.example.belajarsholat.Model.maghrib.Maghrib;
+import com.example.belajarsholat.Model.profile.Profile;
 import com.example.belajarsholat.Model.register.Register;
 import com.example.belajarsholat.Model.subuh.Subuh;
 import com.example.belajarsholat.Model.wudhu.Wudhu;
@@ -77,6 +78,15 @@ public interface ApiInterface {
 
     @GET("getisya.php")
     Call<Isya> Responseisya(
+
+    );
+
+    @FormUrlEncoded
+    @POST("getprofile.php")
+    Call<Profile> Responseprofile(
+            @Field("id") String id,
+            @Field("username") String username,
+            @Field("name") String name
 
     );
 

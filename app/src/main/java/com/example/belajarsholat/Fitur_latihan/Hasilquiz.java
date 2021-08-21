@@ -48,10 +48,6 @@ public class Hasilquiz extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void periksa(View view) {
-        Intent intent = new Intent( Hasilquiz.this, Periksa.class);
-        startActivity(intent);
-    }
 
     private class getIntent extends Intent {
 

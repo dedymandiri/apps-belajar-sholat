@@ -48,10 +48,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imglogo"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
             android:padding="5dp"
-            android:layout_marginTop="10dp"
-            android:text="Belajar Sholat"
+            android:text="Login"
             android:textColor="@color/putih"
             android:textSize="22sp"
             android:textStyle="bold" />

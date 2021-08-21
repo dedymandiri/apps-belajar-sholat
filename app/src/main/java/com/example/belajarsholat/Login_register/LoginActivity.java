@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.Menu_utama.MainActivity2;
 import com.example.belajarsholat.R;
 import com.example.belajarsholat.api.ApiClient;
 import com.example.belajarsholat.api.ApiInterface;
@@ -90,6 +89,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(LoginActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private class MainActivity2 {
     }
 }
 

@@ -27,6 +27,7 @@ public class Sholat_Ashar extends AppCompatActivity {
     SessionManager sessionManager;
     String Judul, Deskripsi;
     JustifyTextView deskripsi;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +44,11 @@ public class Sholat_Ashar extends AppCompatActivity {
 //        judul.setText( Judul );
         deskripsi.setText( Deskripsi );
 
+
     }
 
-    private void ashar() {
 
+    private void ashar() {
         apiInterface = ApiClient.getClient().create( ApiInterface.class );
         Call<Ashar> asharCall = apiInterface.Responseashar();
         asharCall.enqueue( new Callback<Ashar>() {
@@ -55,6 +57,7 @@ public class Sholat_Ashar extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<Ashar> call, Response<Ashar> response) {
+
                 if (response.body() != null && response.isSuccessful() && response.body().isStatus()) {
 
                     sessionManager = new SessionManager( Sholat_Ashar.this );
@@ -86,5 +89,8 @@ public class Sholat_Ashar extends AppCompatActivity {
     public void videosholatashar(View view) {
         Intent intent = new Intent(Sholat_Ashar.this, video_sholatashar.class);
         startActivity(intent);
+    }
+
+    private class ProgressDialog {
     }
 }

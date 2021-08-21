@@ -1,4 +1,4 @@
-package com.example.belajarsholat;
+package com.example.belajarsholat.Menu_utama;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.belajarsholat.Model.aboutme.AboutData;
 import com.example.belajarsholat.Model.aboutme.Aboutme;
+import com.example.belajarsholat.R;
 import com.example.belajarsholat.Session.SessionManager;
 import com.example.belajarsholat.api.ApiClient;
 import com.example.belajarsholat.api.ApiInterface;

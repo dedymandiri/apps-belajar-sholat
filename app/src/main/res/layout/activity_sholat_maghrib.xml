@@ -46,11 +46,12 @@
 
         <me.biubiubiu.justifytext.library.JustifyTextView
             android:id="@+id/deskripsi_maghrib"
-            android:layout_width="359dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:textColor="@color/hitam"
-            android:text="Deskripsikscnjskcnkjsbcjkbsjbsdjkbjsdbckjscjbdsjkjbsdjj"/>
+            android:layout_margin="19dp"
+            android:textSize="16dp"
+            android:text="Deskripsikscnjskcnkjsbcjkbsjbsdjkbjsdbckjscjbdsjkjbsdjj"
+            android:textColor="@color/hitam" />
 
     </ScrollView>
 

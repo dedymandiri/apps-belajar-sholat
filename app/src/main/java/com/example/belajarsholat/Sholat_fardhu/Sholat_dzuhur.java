@@ -61,7 +61,7 @@ public class Sholat_dzuhur extends AppCompatActivity {
 
                     sessionManager = new SessionManager( Sholat_dzuhur.this );
                     DzuhurData dzuhurData = response.body().getData();
-                    sessionManager.createasharSession( dzuhurData );
+                    sessionManager.createdzuhurSession( dzuhurData );
                 } else {
                     Toast.makeText( Sholat_dzuhur.this, response.body().getMessage(), Toast.LENGTH_SHORT ).show();
                 }

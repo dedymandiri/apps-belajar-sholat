@@ -1,4 +1,4 @@
-package com.example.belajarsholat.Menu_utama;
+package com.example.belajarsholat;
 
 import static com.example.belajarsholat.R.id;
 
@@ -14,9 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.belajarsholat.Fitur_latihan.Quiz;
 import com.example.belajarsholat.Login_register.LoginActivity;
-import com.example.belajarsholat.R;
+import com.example.belajarsholat.Menu_utama.Berwudhu;
+import com.example.belajarsholat.Menu_utama.Menu_Sholat;
+import com.example.belajarsholat.Profil.Profile;
 import com.example.belajarsholat.Session.SessionManager;
-import com.example.belajarsholat.aboutme;
+import com.example.belajarsholat.Menu_utama.aboutme;
 
 public class MainActivity2 extends AppCompatActivity {
     TextView etUsername, etName;
