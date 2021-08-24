@@ -31,44 +31,111 @@ public class Quiz extends AppCompatActivity {
     quizpresenter presenter;
     //pertanyaan
     String[] pertanyaan_kuis = new String[]{
-            "1. Sebutkan berapa rakaat pada waktu shalat Shubuh?",
-            "2. Sebutkan berapa rakaat pada waktu shalat Dzuhur?",
-            "3. Selama sehari kita melaksanakan ..... rakaat pada lima waktu!",
-            "4. Sebutkan hikmah shalat fardu bagi kehidupan kehidupan sehari-hari, kecuali?",
-            "5. Sebutkan berapa rakaat pada waktu shalat ashar?",
-            "6. Sebutkan berapa rakaat pada waktu shalat maghrib?",
-            "7. Dalam melaksanakan sholat membaca surat Al-fatihah hukumnya?",
-            "8. Sebutkan berapa rakaat pada waktu shalat Isya?",
-            "9. Ketika takbiratulihram melakukan gerakan mengangkat kedua telapak tangan keatas?",
-            "10.Sholat fardu dalam sehari ada ..... waktu!"
+            "1. Wudhu adalah salah satu cara untuk menghilangkan hadast kecil yang secara secara umum dilaksanakan?",
+            "2. Dibawah ini yang termasuk kedalam syarat sah wudhu, kecuali?",
+            "3. Yang termasuk dalam rukun berwudhu adalah?",
+            "4. Dalam tahapan cara berwudhu setelah membasuh kedua tangan yaitu membasuh?",
+
+            "5. Berapakah jumlah rakaat dalam sholat subuh?",
+            "6. Ushalli fardhaz-shubhi rak'ataini mustaqbilal qiblati adaa’an lilaahi ta’aalaa. merupakan bacaan dalam sholat?",
+            "7. Dibawah ini yang didalam sholatnya terdapat doa qunut adalah?",
+            "8. Dibawah ini adalah keutamaan dalam sholat subuh, kecuali?",
+
+            "9. Berapakah jumlah rakaat yang ada pada sholat dzuhur?",
+            "10.Dibawah adalah dimulainya waktu melaksanakan sholat dzuhur sekitar, kecuali?",
+            "11.Ushallii fardhazh-Zhuhri arba’a raka’aatin mustaqbilal qiblati adaa’an lilaahi ta’aalaa. adalah bacaan niat dalam sholat?",
+            "12.Dibawah ini adalah salah satu keutamaan dalam sholat dzuhur?",
+
+            "13. Berapakah jumlah rakaat yang  ada pada sholat ashar?",
+            "14. Ushalli fardhaz'asri arba'a raka'atin mustaqbilal qiblati adaa’an lilaahi ta’aalaa. merupakan bacaan dalam sholat?",
+            "15. Dibawah ini yang yang termasuk hukum sholat ashar adalah?",
+            "16. Termasuk kedalam waktu sholat ashar adalah?",
+
+            "17. Berapakah jumlah rakaat yang ada pada sholat maghrib?",
+            "18. Ushalli fardhaz'maghribi salasa raka'atin mustaqbilal qiblati adaa’an lilaahi ta’aalaaa. merupakan bacaan dalam sholat?",
+            "19. Dibawah ini yang yang termasuk hukum sholat maghrib adalah, kecuali?",
+            "20. Dalam cara sholat tahapan pertama dalam sholat adalah?",
+
+            "21. Berapakah jumlah rakaat yang ada pada sholat isya?",
+            "22. Ushalli fardhaz'isyai arba'a raka'atin mustaqbilal qiblati adaa’an lilaahi ta’aalaaa. merupakan bacaan dalam sholat?",
+            "23. Dibawah ini adalah yang termasuk keutamaan dalam sholat isya, kecuali?",
+            "24. Dalam cara sholat tahapan setelah Takbiratul ikhrom dalam sholat adalah?",
+            "24. Sholat isya merupakan sholat yang dikerjakan setelah sholat?"
+
     };
 
     //pilihan jawaban a, b, c, d
     String[] pilihan_jawaban = new String[]{
-            "1 Rakaat", "2 Rakaat", "3 Rakaat", "4 Rakaat",
-            "2 Rakaat", "3 Rakaat", "4 Rakaat", "5 Rakaat",
-            "13 Rakaat", "14 Rakaat", "15 Rakaat", "16 Rakaat",
-            "Membiasakan hidup disiplin", "Membiasakan hidup bersosial", "Hikmah membaca do’a iftitah, kejujuran dalam tindakan", "Sarana pembentukan kepribadian muslim",
-            "4 Rakaat", "5 Rakaat", "6 Rakaat", "7 Rakaat",
-            "1 Rakaat", "2 Rakaat", "3 Rakaat", "4 Rakaat",
-            "Sunnah", "Wajib", "Makruh", "Mubah",
-            "2 Rakaat", "4 Rakaat", "6 Rakaat", "8 Rakaat",
-            "Kepala", "Dada", "Perut", "Bahu",
-            "3 (Tiga)", "5 (Lima)", "7 (Tujuh)", "8 (Delapan)"
+            "Sebelum ibadah sholat", "Ketika ibadah sholat", "Sesudah ibadah sholat ",
+            "Islam", "Berhadast besar", "Menggunakan air yang suci dan menyucikan",
+            "Membasuh kedua tangan", "Membasuh muka", "Niat",
+            "Kepala dan rambut", "Kedua kaki", "Kepala dan wajah",
+
+            "1 Rakaat", "2 Rakaat", "3 Rakaat",
+            "Subuh", "Maghrib", "Dzuhur",
+            "Sholat subuh", "Sholat dzuhur", "Sholat ashar",
+            "Pahala Setara dengan Sholat Semalam Suntuk", "Mendapatkan dosa", "Dilapangkan Rezekinya",
+
+            "4 Rakaat", "3 Rakaat", "2 Rakaat",
+            "Pukul 09.15", "Pukul 10.05", "Pukul 11.50",
+            "Sholat dzuhur", "Sholat ashar", "Sholat maghrib",
+            "Mendapatkan dosa besar", "Waktu dimana pintu langit terbuka", "Dapat menghilangkan rasa kantuk",
+
+            "1 Rakaat", "2 Rakaat", "3 Rakaat",
+            "Dzuhur", "Ashar", "Maghrib",
+            "Wajib", "Sunnah", "Mubah",
+            "Pukul 07.00", "Pukul 15.20", "c. Pukul 17.50",
+
+            "2 Rakaat", "b. 3 Rakaat", "4 Rakaat",
+            "Maghrib", "b. Isya", "c. Subuh",
+            "Wajib", "b. Sunnah", "Mubah",
+            "Takbiratul ikhrom", "Pukul 15.20", "Pukul 17.50",
+
+            "4 Rakaat", "6 Rakaat", "8 Rakaat",
+            "Maghrib", "Isya", "Subuh",
+            "Mendapatkan Pahala Setara Dengan Melaksanakan Sholat Malam.", "Melaksanakan Sholat Isya Dapat Menghapus Dosa!", "Badan jadi sehat",
+            "Niat", "Membaca iftitah", "Qunut",
+            "Dzuhur", "Ashar", "Maghrib"
+
+
     };
 
     //kunci jawaban benar
     String[] jawaban_benar = new String[]{
+            "Sebelum ibadah sholat",
+            "Berhadast besar",
+            "Niat",
+            "Kepala dan wajah",
+
             "2 Rakaat",
-            "4 Rakaat",
-            "16 Rakaat",
-            "Membiasakan hidup bersosial",
-            "4 Rakaat",
             "3 Rakaat",
-            "Wajib",
+            "Subuh",
+            "Mendapatkan dosa",
+
             "4 Rakaat",
-            "Bahu",
-            "5 (Lima)"
+            "ukul 09.15",
+            "sholat dzuhur",
+            "Waktu dimana pintu langit terbuka",
+
+            "4 Rakaat",
+            "Ashar",
+            "Wajib",
+            "Pukul 13.20",
+
+            "4 Rakaat",
+            "Maghrib",
+            "Wajib",
+            "Takbiratul ikhrom",
+
+            "4 Rakaat",
+            "isya",
+            "Badan jadi sehat",
+            "Membaca iftitah",
+            "Maghrib"
+
+
+
+
     };
 
     @Override
@@ -83,13 +150,11 @@ public class Quiz extends AppCompatActivity {
         PilihanA = (RadioButton) findViewById( R.id.pilihanA );
         PilihanB = (RadioButton) findViewById( R.id.pilihanB );
         PilihanC = (RadioButton) findViewById( R.id.pilihanC );
-        PilihanD = (RadioButton) findViewById( R.id.pilihanD );
 
         kuis.setText( pertanyaan_kuis[nomor] );
         PilihanA.setText( pilihan_jawaban[0] );
         PilihanB.setText( pilihan_jawaban[1] );
         PilihanC.setText( pilihan_jawaban[2] );
-        PilihanD.setText( pilihan_jawaban[3] );
 
         rg.check( 0 );
         benar = 0;
@@ -103,7 +168,7 @@ public class Quiz extends AppCompatActivity {
 //    }
 
     public void next(View view) {
-        if (PilihanA.isChecked() || PilihanB.isChecked() || PilihanC.isChecked() || PilihanD.isChecked()) {
+        if (PilihanA.isChecked() || PilihanB.isChecked() || PilihanC.isChecked() ) {
 
             RadioButton jawaban_user = (RadioButton) findViewById( rg.getCheckedRadioButtonId() );
             String ambil_jawaban_user = jawaban_user.getText().toString();
@@ -113,13 +178,12 @@ public class Quiz extends AppCompatActivity {
             nomor++;
             if (nomor < pertanyaan_kuis.length) {
                 kuis.setText( pertanyaan_kuis[nomor] );
-                PilihanA.setText( pilihan_jawaban[(nomor * 4) + 0] );
-                PilihanB.setText( pilihan_jawaban[(nomor * 4) + 1] );
-                PilihanC.setText( pilihan_jawaban[(nomor * 4) + 2] );
-                PilihanD.setText( pilihan_jawaban[(nomor * 4) + 3] );
+                PilihanA.setText( pilihan_jawaban[(nomor * 3) + 0] );
+                PilihanB.setText( pilihan_jawaban[(nomor * 3) + 1] );
+                PilihanC.setText( pilihan_jawaban[(nomor * 3) + 2] );
 
             } else {
-                hasil = benar * 10;
+                hasil = benar * 4;
                 Intent intent = new Intent(Quiz.this, Hasilquiz.class);
                 intent.putExtra("status", status);
                 startActivity(intent);

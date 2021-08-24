@@ -35,10 +35,10 @@
 
         <ImageView
             android:id="@+id/imglogo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="800dp"
+            android:layout_height="80dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/logo" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imglogo"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
             android:padding="5dp"
             android:text="Register"
@@ -58,9 +58,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_below="@id/tvtext"
             android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -89,11 +89,11 @@
 
                     <EditText
                         android:id="@+id/etRegisterName"
-                        android:layout_below="@+id/etRegisterUsername"
                         style="@style/styleEditText"
+                        android:layout_below="@+id/etRegisterUsername"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:drawableLeft="@drawable/ic_baseline_account_box_24"
                         android:drawablePadding="15dp"
                         android:hint="Masukkan nama"
@@ -113,22 +113,22 @@
 
                     <EditText
                         android:id="@+id/etRegisterUsername"
-                        android:layout_below="@+id/tvPleaseCreateAccount"
                         style="@style/styleEditText"
+                        android:layout_below="@+id/tvPleaseCreateAccount"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:drawableLeft="@drawable/ic_baseline_person_24"
                         android:drawablePadding="15dp"
-                       android:hint="Masukkan username"
+                        android:hint="Masukkan username"
                         android:paddingLeft="20dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:text="Password :"
                         android:textColor="@color/putih"
                         android:textSize="15sp"
@@ -138,11 +138,11 @@
                         android:id="@+id/etRegisterPassword"
                         style="@style/styleEditText"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="Masukkan password"
+                        android:layout_marginRight="10dp"
                         android:drawableLeft="@drawable/ic_baseline_lock_24"
                         android:drawablePadding="15dp"
+                        android:hint="Masukkan password"
                         android:paddingLeft="20dp" />
 
                     <LinearLayout
@@ -154,28 +154,28 @@
 
                         <Button
                             android:id="@+id/btnRegister"
-                            android:layout_below="@+id/etRegisterPassword"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_below="@+id/etRegisterPassword"
                             android:layout_marginBottom="20dp"
                             android:background="@drawable/round_btn"
                             android:text="DAFTAR"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
                             android:textAllCaps="false"
-                            android:textColor="@color/putih"/>
+                            android:textColor="@color/putih"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <TextView
                         android:id="@+id/tvloginhere"
-                        android:layout_below="@+id/btnRegister"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textColor="@color/putih"
+                        android:layout_below="@+id/btnRegister"
+                        android:gravity="center_horizontal"
                         android:text="Sudah Punya Akun? Login Disini.\n"
-                        android:gravity="center_horizontal" />
+                        android:textAlignment="center"
+                        android:textColor="@color/putih" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

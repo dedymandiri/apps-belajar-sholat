@@ -53,7 +53,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:id="@+id/pilihan"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:justificationMode="inter_word"
         android:layout_height="wrap_content">
 
@@ -75,29 +75,20 @@
             android:text="C. Pilihan C"
             android:id="@+id/pilihanC"/>
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="D. Pilihan D"
-            android:id="@+id/pilihanD"/>
+
 
     </RadioGroup>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="300dp"
             android:background="@color/colorPrimary"
             android:onClick="next"
             android:text="Selanjutnya"
             android:textColor="@color/putih" />
 
-    </RelativeLayout>
 
 </LinearLayout>

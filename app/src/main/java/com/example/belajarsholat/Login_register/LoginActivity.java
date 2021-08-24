@@ -66,6 +66,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Call<Login> loginCall = apiInterface.loginResponse(username, password);
         loginCall.enqueue(new Callback<Login>() {
 
+            class MainActivity2 {
+            }
+
             @Override
             public void onResponse(Call<Login> call, Response<Login> response) {
                 if (response.body() != null && response.isSuccessful() && response.body().isStatus()) {
@@ -75,7 +78,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     sessionManager.createLoginSession(loginData);
 
                     Toast.makeText(LoginActivity.this, response.body().getData().getName(), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
+                    Intent intent = new Intent( LoginActivity.this, MainActivity2.class );
                     startActivity(intent);
                     finish();
                 } else {
@@ -91,7 +94,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    private class MainActivity2 {
-    }
+
 }
 

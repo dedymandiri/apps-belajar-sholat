@@ -35,11 +35,7 @@
         <activity
             android:name=".Tatacara_sholat.Cara_berwudhu"
             android:exported="true" />
-        <activity
-            android:name=".Latihan_quiz.FileCache"
-            tools:ignore="Instantiatable,MissingClass" />
-        <activity android:name=".Latihan_quiz.MainActivity" />
-        <activity android:name=".Latihan_quiz.input_user" />
+
         <activity android:name=".Tatacara_sholat.Cara_sholatisya" />
         <activity android:name=".Tatacara_sholat.Cara_sholatmaghrib" />
         <activity android:name=".Tatacara_sholat.Cara_sholatashar" />
