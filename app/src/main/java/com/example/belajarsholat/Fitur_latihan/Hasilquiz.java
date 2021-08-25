@@ -12,6 +12,7 @@ import com.example.belajarsholat.R;
 
 public class Hasilquiz extends AppCompatActivity {
 
+    public static int hasilMateri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +21,10 @@ public class Hasilquiz extends AppCompatActivity {
         TextView hasil = (TextView)findViewById(R.id.hasil);
         TextView nilai = (TextView)findViewById(R.id.nilai);
 
+        hasilMateri = Quiz.materi;
         int hasilAngka = Quiz.hasil;
         String status = "";
+
         if(hasilAngka <= 70) {
             status = "Kurang Baik";
         }else if(hasilAngka <= 85) {
