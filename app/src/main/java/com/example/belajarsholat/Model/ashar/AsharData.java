@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class AsharData {
 
-	@SerializedName("id_ashar")
-	private String idAshar;
+	@SerializedName("id")
+	private String id;
 
 	@SerializedName("deskripsi_ashar")
 	private String deskripsiAshar;
@@ -13,12 +13,12 @@ public class AsharData {
 	@SerializedName("judul_ashar")
 	private String judulAshar;
 
-	public void setIdAshar(String idAshar){
-		this.idAshar = idAshar;
+	public void setIdAshar(String id){
+		this.id = id;
 	}
 
 	public String getIdAshar(){
-		return idAshar;
+		return id;
 	}
 
 	public void setDeskripsiAshar(String deskripsiAshar){

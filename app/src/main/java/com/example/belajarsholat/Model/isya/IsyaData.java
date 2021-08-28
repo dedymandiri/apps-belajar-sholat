@@ -7,8 +7,8 @@ public class IsyaData {
 	@SerializedName("judul_isya")
 	private String judulIsya;
 
-	@SerializedName("id_isya")
-	private String idIsya;
+	@SerializedName("id")
+	private String id;
 
 	@SerializedName("deskripsi_isya")
 	private String deskripsiIsya;
@@ -21,12 +21,12 @@ public class IsyaData {
 		return judulIsya;
 	}
 
-	public void setIdIsya(String idIsya){
-		this.idIsya = idIsya;
+	public void setIdIsya(String id){
+		this.id = id;
 	}
 
-	public String getIdIsya(){
-		return idIsya;
+	public String getId(){
+		return id;
 	}
 
 	public void setDeskripsiIsya(String deskripsiIsya){

@@ -20,7 +20,7 @@ public class Quiz extends AppCompatActivity {
     TextView kuis;
     RadioGroup rg;
     String status;
-    RadioButton PilihanA, PilihanB, PilihanC, PilihanD;
+    RadioButton PilihanA, PilihanB, PilihanC;
     private static final String TAG = "Testing: ";
     int nomor = 0;
     public static int hasil;
@@ -106,12 +106,12 @@ public class Quiz extends AppCompatActivity {
             "Pukul 07.00", "Pukul 15.20", "Pukul 17.50",
 
             //Sholatmaghrib
-            "1 Rakaat", "5 Rakaat", "7 Rakaat",
+            "1 Rakaat", "3 Rakaat", "5 Rakaat",
             "Sholat maghrib", "Sholat isya", "Sholat subuh",
-            "Membaca al-fatiha", "Takbiratul ikhrom", "Membaca doa qunut",
-            "Sholat maghrib", "Sholat isya", "Sholat subuh",
+            "Membaca al-fatikha", "Takbiratul ikhrom", "Membaca doa qunut",
+            "Sholat ashar", "Sholat isya", "Sholat subuh",
 
-            //Sholatmaghrib
+            //Sholat isya
             "4 Rakaat", "6 Rakaat", "8 Rakaat",
             "Sholat maghrib", "Sholat isya", "Sholat subuh",
             "Mendapatkan pahala setara melaksanakan sholat malam.", "Melaksanakan sholat isya dapat menghapus dosa", "Badan jadi lebih sehat",
@@ -147,14 +147,14 @@ public class Quiz extends AppCompatActivity {
             "Pukul 15.20",
 
             //Sholatmaghrib
-            "4 Rakaat",
-            "Maghrib",
+            "3 Rakaat",
+            "Sholat maghrib",
             "Wajib",
-            "Takbiratul ikhrom",
+            "Sholat ashar",
 
             //Sholatisya
             "4 Rakaat",
-            "isya",
+            "Sholat isya",
             "Badan jadi lebih sehat",
             "Membaca doa iftitah"
 
@@ -249,7 +249,7 @@ public class Quiz extends AppCompatActivity {
                 PilihanC.setText( pilihan_jawaban[(nomor * 3) + 2] );
 
             } else {
-                hasil = benar * 4;
+                hasil = benar * 5;
 
                 Intent intent = new Intent(Quiz.this, Hasilquiz.class);
                 intent.putExtra("status", status);

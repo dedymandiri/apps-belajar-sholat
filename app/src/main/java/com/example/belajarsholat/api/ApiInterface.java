@@ -79,6 +79,7 @@ public interface ApiInterface {
     @GET("getisya.php")
     Call<Isya> Responseisya(
 
+
     );
 
     @FormUrlEncoded

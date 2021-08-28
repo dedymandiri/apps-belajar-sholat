@@ -10,12 +10,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.belajarsholat.R;
-import com.example.belajarsholat.api.ApiClient;
-import com.example.belajarsholat.api.ApiInterface;
+import com.example.belajarsholat.MainActivity2;
 import com.example.belajarsholat.Model.login.Login;
 import com.example.belajarsholat.Model.login.loginData;
+import com.example.belajarsholat.R;
 import com.example.belajarsholat.Session.SessionManager;
+import com.example.belajarsholat.api.ApiClient;
+import com.example.belajarsholat.api.ApiInterface;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -41,7 +42,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnLogin.setOnClickListener(this);
 
         tvRegister = findViewById(R.id.tvCreateAccount);
-        tvRegister.setOnClickListener(this);
+        tvRegister.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        } );
 
     }
 
@@ -53,10 +60,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Password = etPassword.getText().toString();
                 login(Username, Password);
                 break;
-            case R.id.tvCreateAccount:
-                Intent intent = new Intent(this, RegisterActivity.class);
-                startActivity(intent);
-                break;
         }
     }
 
@@ -65,9 +68,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         apiInterface = ApiClient.getClient().create(ApiInterface.class);
         Call<Login> loginCall = apiInterface.loginResponse(username, password);
         loginCall.enqueue(new Callback<Login>() {
-
-            class MainActivity2 {
-            }
 
             @Override
             public void onResponse(Call<Login> call, Response<Login> response) {

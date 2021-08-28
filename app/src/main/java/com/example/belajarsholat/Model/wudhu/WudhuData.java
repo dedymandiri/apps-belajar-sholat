@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class WudhuData {
 
-	@SerializedName("id_wudhu")
-	private String idWudhu;
+	@SerializedName("id")
+	private String id;
 
 	@SerializedName("deskripsi_wudhu")
 	private String deskripsiWudhu;
@@ -13,12 +13,12 @@ public class WudhuData {
 	@SerializedName("judul_wudhu")
 	private String judulWudhu;
 
-	public void setIdWudhu(String idWudhu){
-		this.idWudhu = idWudhu;
+	public void setIdWudhu(String id){
+		this.id = id;
 	}
 
 	public String getIdWudhu(){
-		return idWudhu;
+		return id;
 	}
 
 	public void setDeskripsiWudhu(String deskripsiWudhu){

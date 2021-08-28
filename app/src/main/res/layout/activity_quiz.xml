@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="10dp"
     tools:context=".Fitur_latihan.Quiz">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="99dp"
+        android:layout_height="wrap_content"
         android:background="@color/oranye"
         android:padding="20dp">
 
@@ -44,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kuis Sederhana"
-        android:layout_marginTop="25dp"
+        android:layout_margin="15dp"
         android:id="@+id/kuis"
         android:textSize="17dp"
         android:textColor="@color/hitam"
@@ -53,7 +52,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:id="@+id/pilihan"
-        android:layout_marginTop="70dp"
+        android:layout_margin="15dp"
         android:justificationMode="inter_word"
         android:layout_height="wrap_content">
 
@@ -61,34 +60,34 @@
             android:id="@+id/pilihanA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A. Pilihan A" />
+            android:text="Pilihan A" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B. Pilihan B"
+            android:text="Pilihan B"
             android:id="@+id/pilihanB"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="C. Pilihan C"
+            android:text="Pilihan C"
             android:id="@+id/pilihanC"/>
-
 
 
     </RadioGroup>
 
         <Button
             android:id="@+id/next"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="250dp"
             android:background="@color/colorPrimary"
             android:onClick="next"
             android:text="Selanjutnya"
             android:textColor="@color/putih" />
+
 
 
 </LinearLayout>
