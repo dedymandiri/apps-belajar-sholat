@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back_satu"
     tools:context=".Fitur_latihan.Quiz">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/oranye"
+        android:background="#6ab04c"
         android:padding="20dp">
 
         <TextView
@@ -38,6 +39,7 @@
             android:src="@drawable/logo" />
 
     </RelativeLayout>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -76,6 +78,7 @@
 
 
     </RadioGroup>
+
 
         <Button
             android:id="@+id/next"

@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back_satu"
     tools:context=".Menu_utama.Berwudhu">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/oranye"
+        android:background="#6ab04c"
         android:padding="20dp">
 
         <TextView
@@ -69,10 +70,9 @@
         android:layout_height="wrap_content"
         android:text="Cara wudhu"
         android:onClick="carasholatashar"
-        android:background="@color/colorPrimary"
+        android:background="#27ae60"
         android:textColor="@color/putih"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1" />
 
         <Button
             android:layout_width="98dp"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:text="Video"
             android:onClick="videowudhu"
-            android:background="@color/colorPrimary"
+            android:background="#27ae60"
             android:textColor="@color/putih"
             android:layout_weight="1"
             />

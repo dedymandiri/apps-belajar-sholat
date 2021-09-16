@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_satu"
     tools:context=".Profil.Ubahprofile">
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/custom_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +24,38 @@
         android:textColor="@color/putih"
         android:textSize="20dp"
         android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ab04c"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtdasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Profil "
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdasboard"
+            android:layout_marginTop="6dp"
+            android:text="Untuk ubah data profil"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
 
 
     <LinearLayout
